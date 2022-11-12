@@ -100,7 +100,7 @@ document.getElementById('increase').onclick = function(){
 
 
 
-//for loop
+//for loop === repeat some code a certain amount of time
 
 let talent = ['skills','ideas','kowmlegd','capabilities']
 console.log(talent)
@@ -119,13 +119,14 @@ for(let i = 0; i < num.length; i++){
 }
 
 
-//while loop
+//while loop === it repeat some code when a condition is true.
+// potentialy infinite.
 
-if(1 === 1){
-    console.log('good idea yey')
-}
+// while(1 === 1){
+//     // console.log('good idea yey')
+// }
 
-//nesto loop
+//nesto loop == loop created within loops
 
 numb = [1,2,3,4,5,6,7,8,9,10]
 
@@ -137,7 +138,16 @@ for(let i = 0; i < 2; i++){
 }
 
 
-//switch case
+// do while loop == do something and check when the condition is true
+// then it loops.
+
+
+
+
+
+
+
+//switch case =statements tha examine a value for a match clauses
 
 let grade = 'a';
 
@@ -213,25 +223,69 @@ const one =[farms, bu, letters];
 console.log(one);
 
 
+// && and || it helps us to check more than one conditions
+// and (all conditions mus be true)
+// or (either conditions must be true)
 
 
 
+let temp = 15;
+
+if(temp > 10 && temp < 30){
+    console.log('good weather')
+}else{
+    console.log('not good at all')
+}
+
+
+let tem = 20;
+
+
+if(tem < 0 || tem > 30) {
+    console.log('good')
+}else{
+    console.log('bad')
+}
+
+
+//! not logical operator it reverse boolean value 
+// true - false or false -true
+
+
+t = 10;
+v = 5;
+
+if(v !== t){
+    console.log('true')
+}else{
+    console.log('false')
+}
+
+
+//breaak === it braek loops entirely
+// continue === it skip iteratios of a loops 
+
+
+//tenary operator === shortcut os if and else statemen
+ // conditions ? espress true or espres false
+
+checkwiner(true);
+
+function checkwiner(win){
+    win ? console.log('you win') : console.log('you lose')
+}
 
 
 
+//varriables scope == where we can access varriables
 
+for(let v = 0; v < 3;v+=1){
+    console.log(v)
+}//let varriables the console always dey inside
 
-
-
-
-
-
-
-
-
-
-
-
+for(let c = 0; c < 3;v+=1){
+    console.log(c)
+}//let varriables the console always dey outside
 
 
 
