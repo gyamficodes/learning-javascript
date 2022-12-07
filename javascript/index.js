@@ -12,6 +12,7 @@ document.getElementById('mybutton').onclick = function(){
     }
 };
 
+
 //printig
 const names = ['monday', 'tuesday', 'wenesday', 'thursday', 'friday'];
 
@@ -315,8 +316,9 @@ console.log(mynum);
 
 //Arrays ==they can store multiples values
 
-let foodstaff = ['apple','banana','mango']
-let foodstaf = ['apple','banana','mango']
+let foo = ['app','ban','man','ma'];
+let foodstaff = ['apple','banana','mango','apple'];
+let foodstaf = ['apple','banana','mango'];
 // foodstaff[0] = 'beans';.
 //foodstaff.push('fish') adding an element to the last of array.
 // foodstaff.pop() remove last element of an array.
@@ -328,9 +330,64 @@ let foodstaf = ['apple','banana','mango']
 //foodstaff.splice(2, 0, "Lemon", "Kiwi"); method can be used to add new items to an array:
 //foodstaff = foodstaff.sort(); arrangement of the Element. eg alphabatical order
 //foodstaff.sort().reverse() it reverse the alphabatical order to it previous state.
+//foo.copyWithin(2,0 ) //Copies array elements within the array, to and from specified positions
+ //console.log(foo.entries()) Returns a key/value pair Array Iteration Object
+//console.log(foodstaff.includes('apple'))  === it checks when der is apple inside
+// console.log(foodstaff.lastIndexOf( 'banana'))
+ //console.log(foo.fill('fake')) 	Fill the elements in an array with a static value
+// every == Checks if every element in an array pass a test
+// const ages = [32, 33, 16, 40];
+//keys ===Returns a Array Iteration Object, containing the keys of the original array
+// map ==Return a new array with the square root of all element values:
+// const fruit = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruit.map((a, b)  => ({
+//     return : a + b
+// })))
+// const keys = fruit.keys();
+
+// let text = "";
+// for (let x of keys) {
+//   text += x + "<br>";
+// }
+//document.getElementById("demo").innerHTML = text;
+
+
+//every === 	Checks if every element in an array pass a test
+// ages.every(checkAge)
+
+// function checkAge(age) {
+//   console.log(age > 18  ) ;
+// }
+
+//filter == 	Creates a new array with every element in an array that pass a test
+// const ages = [32, 33, 16, 40];
+// const result = ages.filter(checkAdult);
+
+// function checkAdult(age) {
+// console.log(  age >= 19 );
+// }
+
+// console.log(ages.find(ages > 32))
+
+//find ===Find the first element with a value over 18:
+const ages = [3, 10, 18, 20];
+
+
+// document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+// function checkAge(age) {
+//   return age > 18;
+// }
 
 console.log(foodstaff);
-console.log(foodstaf);
+// console.log(foodstaf);
+console.log(foo)
+
+
+
+
+
+
 
 
 
@@ -442,6 +499,34 @@ function mycheckcheckes(){
 
 
 
+
+//setTimeout
+
+setTimeout(mynessage, 3000)
+setTimeout(mynessag, 3000)
+
+function mynessage(){
+    console.log('kofi is a boy')
+}
+
+function mynessag(){
+    console.log('ama is a girl')
+}
+
+//setInterval  == it involks a funtion repeatedly after number millons o seconds
+let counttt = 0;
+
+let max = window.prompt('count the number #?');
+max = Number(max);
+
+const myTimer = setInterval(countup, 1000);
+function countup(){
+    counttt+=1;
+    console.log(counttt);
+    if(counttt >= max){
+        clearInterval(myTimer);
+    }
+}
 
 
 
