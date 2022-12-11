@@ -320,6 +320,13 @@ let foo = ['app','ban','man','ma'];
 let foodstaff = ['apple','banana','mango','apple'];
 let foodstaf = ['apple','banana','mango'];
 // foodstaff[0] = 'beans';.
+// console.log(foo.map((item) => ({
+//     return: item + 'abc'
+// }) )
+// console.log(foo.find((item) => item > 'app'))
+// console.log(foo.findIndex((item) => item == 'app'))
+ //console.log(foo.filter((item) => item > 'app'))	Creates a new array with every element in an array that pass a test   
+// console.log(kk.every((item) => item > 0))Checks if every element in an array pass a test
 //foodstaff.push('fish') adding an element to the last of array.
 // foodstaff.pop() remove last element of an array.
 // foodstaff.unshift('pawpaw') adding an element to the begining of array.
@@ -358,19 +365,9 @@ let foodstaf = ['apple','banana','mango'];
 // function checkAge(age) {
 //   console.log(age > 18  ) ;
 // }
-
-//filter == 	Creates a new array with every element in an array that pass a test
-// const ages = [32, 33, 16, 40];
-// const result = ages.filter(checkAdult);
-
-// function checkAdult(age) {
-// console.log(  age >= 19 );
-// }
-
-// console.log(ages.find(ages > 32))
-
+  
 //find ===Find the first element with a value over 18:
-const ages = [3, 10, 18, 20];
+// const ages = [3, 10, 18, 20];
 
 
 // document.getElementById("demo").innerHTML = ages.find(checkAge);
@@ -386,8 +383,41 @@ console.log(foo)
 
 
 
+// strings === they are use to manupulate text / characters.
+let kk = [1,2,3,4,45]
+let fullname = 'gyamfi john';
+let info = 'kumasi';
+// console.log(fullname.toLocaleLowerCase()) === Returns a string converted to lowercase letters, using the host's locale
+//console.log(fullname.toLocaleUpperCase())  === it  returns a string to uppercase
+//console.log(fullname.charAt(0))  === it showns the specific index of string
+//console.log(fullname.length)  == it shows the amount of strings u have
+//console.log(fullname.indexOf('y')) === it shows u the postion of a certain test
+//console.log(fullname.endsWith('john')) === it check when it ends with a certain text
+//console.log(fullname.includes('gyamfi'))  == it checks to see it the text have something
+//console.log(fullname.slice(0,3))  === Extracts a part of a string and returns a new string
+//console.log(fullname.split())   ===  it converts strings to arrays
+//console.log(fullname.startsWith('gyamfi')) === it check when it start with a certain text
+//console.log(fullname.substring(1, 4)) it shows some part of the string when u specifies an index
+//console.log(fullname.trim()) === it clear the white space of a string
+//console.log(fullname.trimStart()) Returns a string with removed whitespaces from the start
+// console.log(fullname.trimEnd()) Returns a string with removed whitespaces from the end
+//console.log(fullname.concat(info)) == ading two Stringtogrther
+// console.log(fullname.lastIndexOf('y')) === it gives u the num of a certain string
+//console.log(fullname.repeat(3))  === it repeats the string number of Time u want
+console.log(fullname)
 
 
+//number ==== numerics eg; 1234567
+var mynumber = 50; 
+// console.log(Number.isInteger(mynumber)) it checks wether the data type is integer
+//  let div = 20 / 'john';  it checks when the number is not legal
+// console.log(div)
+// console.log(Number.isNaN(div)) // it checks wether a number is nan or not
+//console.log(Number.parseFloat(20,30,40,50)); it parse the number and return the first number
+//console.log(Number.parseInt(300.5)); it remove the decimal point and rturn integer
+console.log(mynumber.toFixed(2))
+
+console.log(mynumber)
 
 
 
@@ -514,25 +544,75 @@ function mynessag(){
 }
 
 //setInterval  == it involks a funtion repeatedly after number millons o seconds
-let counttt = 0;
+// let counttt = 0;
 
-let max = window.prompt('count the number #?');
-max = Number(max);
+// let max = window.prompt('count the number #?');
+// max = Number(max);
 
-const myTimer = setInterval(countup, 1000);
-function countup(){
-    counttt+=1;
-    console.log(counttt);
-    if(counttt >= max){
-        clearInterval(myTimer);
-    }
+// const myTimer = setInterval(countup, 1000);
+// function countup(){
+//     counttt+=1;
+//     console.log(counttt);
+//     if(counttt >= max){
+//         clearInterval(myTimer);
+//     }
+// }
+
+
+
+//date the date object is used  to work with dates  and time
+
+let date = new Date();
+
+let year = date.getFullYear(); //=== u will the year
+let dayofmonth = date.getDay(); // === u will get the day of the week
+let month = date.getMonth(); // it helps to get month
+let second = date.getSeconds();
+let hours = date.getHours();
+let minute = date.getMinutes();
+
+date = date.toLocaleString()
+// document.getElementById('demo').innerHTML = year;
+document.getElementById('demo').innerHTML = second;
+
+
+
+
+  class users{
+  constructor(fullname,age,country){
+    this.fullname = fullname;
+    this.age = age;
+    this.country = country;
+  }
 }
 
+const users1 = new users('john', 40, 'kumasi');
+ console.log(users1);
+
+
+
+
+//snychronous   === in order sequence
+//from start to end
 
 
 
 
 
+
+
+//async
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
