@@ -194,6 +194,19 @@ if(vegetable == 'food'){
     console.log('its a fruit')
 };
 
+let password = 'password@1234';
+
+if(password.length >= 12 || password.includes('@')){
+    console.log('you have a strongn password!')
+}else if(password.length >= 8 && password.endsWith('1234')){
+    console.log('you password is good enough!')
+}else if(password < 8){
+    console.log('you password is not good enough!')
+}else{
+    console.log('warnig')
+}
+
+
 
 const family = 40;
 const church = 10;
@@ -613,12 +626,25 @@ const users1 = new users('john', 40, 'kumasi');
 
 
 
-
+ //functions 
  
+//nested function == fntion within another func
+let login = 'gyamfi';
+let passw = 20;
 
+loginn();
 
+function loginn(){
+    displaylogin();
+    displaypassw();
 
- 
+    function displaylogin(){
+        console.log(`your wellcome ${login} `)
+    };
+    function displaypassw(){
+        console.log(`you have ${passw} message`)
+    }
+}
 
 
 
