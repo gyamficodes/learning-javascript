@@ -127,6 +127,14 @@ for(let i = 0; i < num.length; i++){
 //     // console.log('good idea yey')
 // }
 
+// var numbb = [1,2,3,4,5,6,7,8,9,10]
+// let i = 0;
+// while(i < numbb.length){
+//     console.log('finis', numbb[i]);
+//     i++;
+// }
+    
+
 //nesto loop == loop created within loops
 
 numb = [1,2,3,4,5,6,7,8,9,10]
@@ -143,8 +151,7 @@ for(let i = 0; i < 2; i++){
 // then it loops.
 
 
-
-
+ 
 
 
 
@@ -576,7 +583,7 @@ date = date.toLocaleString()
 document.getElementById('demo').innerHTML = second;
 
 
-
+// class n constructor
 
   class users{
   constructor(fullname,age,country){
@@ -607,8 +614,7 @@ const users1 = new users('john', 40, 'kumasi');
 
 
 
-
-
+ 
 
 
 
