@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 let name = 30;
 console.log(name  + 10)
 
@@ -19,8 +25,8 @@ const names = ['monday', 'tuesday', 'wenesday', 'thursday', 'friday'];
 const elment= document.getElementById('weekdays');
 
 let html = '';
-for(item of names){
-    html+=`<li>${item}</li>`
+for(items of names){
+    html+=`<li>${items}</li>`
 }
 
 elment.innerHTML = html;
@@ -634,7 +640,7 @@ let passw = 20;
 
 loginn();
 
-function loginn(){
+  function loginn(){
     displaylogin();
     displaypassw();
 
@@ -648,4 +654,40 @@ function loginn(){
 
 
 
+// arrow functions
 
+// const greet = () => 'hello world';
+
+// const result = greet();
+// console.log(result)
+
+
+
+const calradius = (radius) =>  40 * 30 ;
+const  result  = calradius();
+console.log(result)
+
+ 
+
+const itemss = ['dd','mm','gg'];
+let print = '';
+const ol = document.querySelector('.pri');
+console.log(itemss.forEach(function(item){
+    print +=`<h1>${itemss}`.repeat(3).toLocaleUpperCase()
+}));
+ ol.innerHTML = print;
+
+
+
+//Math
+let area = 7.1;
+
+console.log(Math.PI)
+console.log(Math.PI)
+console.log(Math)
+
+
+console.log(Math.floor(area))
+console.log(Math.ceil(area))
+console.log(Math.trunc(area))
+ 
