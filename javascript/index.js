@@ -680,7 +680,7 @@ console.log(itemss.forEach(function(item){
 
 
 //Math
-let area = 7.1;
+let area = 7.6;
 
 console.log(Math.PI)
 console.log(Math.PI)
@@ -690,4 +690,60 @@ console.log(Math)
 console.log(Math.floor(area))
 console.log(Math.ceil(area))
 console.log(Math.trunc(area))
- 
+
+
+
+// dom
+// const param = document.querySelectorAll('p')
+// const errors = document.querySelectorAll('.error')
+
+// errors.forEach((errors) => {
+//     console.log('error')
+// })
+
+// param.forEach((param) => {
+//     console.log(param)
+// })
+
+// console.log(param)
+
+
+
+
+//get  an element by id 
+ const title = document.getElementById('pages')
+ console.log(title)
+title.setAttribute('style', 'color:blue;')
+
+// get element by class name
+const clases = document.getElementsByClassName('error')
+console.log(clases)
+// console.log(clases[0]) == if u want to get the first class or the second class
+
+
+// get element by tag name
+const tag = document.getElementsByTagName('p')
+// console.log('p')
+
+
+const people = ['kofi','john0','kwabena'];
+
+people.forEach((item) => console.log(item))
+
+
+const link = document.querySelector('a')
+console.log(link.getAttribute('href')) //selectimg attribute
+link.setAttribute('href','https://www.thenetninja.co.uk')//changing atribute to another
+link.innerText = 'the net ninja website'
+link.setAttribute('style', 'color:red;') // its a javascript style property
+
+
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,6 @@ button{
     position: relative;
     z-index: 1;
     transition: all 0.4s ease-in-out;
-
 }
 
 button::after{
