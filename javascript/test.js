@@ -52,15 +52,97 @@
 // //     }
 // // }
 
+// user.charAt()
+// user.lastIndexOf()
+// user.length
+// user.toUpperCase()
+// user.toLowerCase()
+// user.indexOf()
+// user.endsWith()
+// user.startsWith()
+// user.lastIndexOf()
+// user.includes()
+// user.trim()
+// user.trimStart()
+// user.trimEnd()
+// user.padEnd()
+// user.padStart()
+// user.concat()
+// user.split()
+// user.substring()
+// user.replace()
+// user.replaceAll()
+
+
+// Object.keys()
+// Object.values()
+// Object.freeze()
+// Object.isFrozen()
+// Object.isSealed()
+// Object.assign()
+// Object.entries()
+
+
+// Number.isNaN
+// Number.NaN
+// Number.parseFloat
+// Number.parseInt 
+// Number.isInteger
+
+
+ //for loop
+
+// for(let p = 0; p <= 10; p++){
+//     console.log(p)
+// }
+
+let pie = ['q','k',12]
+
+// for(e of pie){
+//     console.log(e)
+// }
+
+// while loop
+// var i = 0;
+
+// while(pie.length > i){
+//     console.log(pie[i]);
+//     i++;
+// }
+
+// while(1 == 1)(
+//     console.log('sss')
+// )
+
+// do while loop
+// do{
+//     console.log('good')
+// }while(pie.length > i){
+//     console.log(pie[i])
+// }
+
+//nesto loop
+// for(c = 0; c<= 3; c++){
+//     console.log(c)
+//     for(k = 0; k <= 10 ; k++){
+//         console.log(k)
+//     }
+// }
+
+
+// call back func
+
+// pie.forEach((item) => {
+//     console.log(item) 
+// })
+
+
+// console.log(pie.map((a, b) => {
+//     return a +  b
+// }))
 
 
 
-
-
-
-
-
- 
 
 
 
