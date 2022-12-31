@@ -254,15 +254,15 @@ default:{
 // weather app
 
 
-let  weather = window.prompt('how is the weather today?')
+// let  weather = window.prompt('how is the weather today?')
 
-if(weather == 'rain'){
-    console.log('grab your umbrella!')
-}else if(weather == 'sunny'){
-    console.log('you do not need umbrella!')
-}else{
-    console.log('goodnight!')
-}
+// if(weather == 'rain'){
+//     console.log('grab your umbrella!')
+// }else if(weather == 'sunny'){
+//     console.log('you do not need umbrella!')
+// }else{
+//     console.log('goodnight!')
+// }
 
 
 
@@ -279,7 +279,153 @@ let pp = '';
 pp+=`<span>${st}`
 paper.innerHTML = pp;
 
-paper.setAttributeNS()
+// paper.setAttributeNS()
+
+
+//syncronous code == in ordred sequence / step by step / start now finish now 
+console.log('thank God')
+
+
+
+
+//asyncronous code == start now n finish later
+//eg, acess the datd base n fect file task that take time . start now n finis later
+ setTimeout(pray(), 5000)
+
+function pray(){
+    console.log('thank god for life')
+}
+
+
+//time === u can start a timer for how long u want operatins want to take
+// time, timEnd
+
+
+
+//promise it returns some thin in the future
+const promise = new Promise((resolve, reject) => {
+    let fileloaded = false;
+
+    if(fileloaded){
+        resolve('fileload successful')
+    }else{
+        reject('fileload fails')
+    }
+})
+
+promise.then(value => console.log(value))
+      .catch(error => console.log(error))
+
+
+//async itmakes a function returns a promise
+// waits === makes an async wait for a promise
+
+
+//dom
+// document.getElementsByName
+// eg, fruit, person in html
+
+//document.getElementsByTagName
+//eg li,ul,p
+
+//document.getElementsByClassName
+//gettin the class name fro, html file
+
+// document.querySelector
+// document.querySelectorAll
+
+
+// document.firstChild 
+// document.lastElementChild
+// document.lastChild
+// document.previousSibling
+// document.nextSibling
+//parentElement
+
+
+
+
+//add n change element in html elemants
+
+
+const nametag = document.createElement('h1')
+nametag.textContent ='food'
+document.body.append(nametag);
+nametag.style.color = 'green'
+
+const peace = 'kofi is going to school'
+nametag.textContent = peace;
+
+console.log(nametag)
+
+
+
+//apend puting item last 
+
+// const mylist = document.querySelector('#fruits');
+// const myfriuts = document.createElement('li');
+// myfriuts.textContent = 'pawpaw';
+// mylist.append(myfriuts)
+
+
+
+
+//prepend puting item first
+
+const mylist = document.querySelector('#fruits');
+const myfriuts = document.createElement('li');
+myfriuts.textContent = 'pawpaw';
+mylist.prepend(myfriuts);
+// myfriuts.innerText = 'someone page'
+
+
+
+//click sections / mouse event
+const element= document.getElementById('div')
+// const  element = document.getElementById('but')
+// element.onclick = dosomething; 
+// element.onload = dosomething;
+// setTimeout(dosomething(),1000)
+// element.onmouseout = dosomething;
+// element.onmouseover = dosomethingelse;
+element.onmousedown =dosomething;
+element.onmouseup = dosomethingelse;
+
+function dosomething(){
+    element.style.background='orange'
+}
+
+
+function dosomethingelse(){
+    element.style.background = 'red'
+} 
+
+
+//adeventlistner ==(event,function,usercapture)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
