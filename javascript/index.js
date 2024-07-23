@@ -433,6 +433,9 @@ let info = 'kumasi';
 console.log(fullname)
 
 
+
+
+
 //number ==== numerics eg; 1234567
 var mynumber = 50; 
 // console.log(Number.isInteger(mynumber)) it checks wether the data type is integer
