@@ -690,6 +690,10 @@ console.log(Math.PI)
 console.log(Math)
 
 
+
+
+
+
 console.log(Math.floor(area))
 console.log(Math.ceil(area))
 console.log(Math.trunc(area))
