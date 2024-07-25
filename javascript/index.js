@@ -701,18 +701,18 @@ console.log(Math.trunc(area))
 
 
 // dom
-// const param = document.querySelectorAll('p')
-// const errors = document.querySelectorAll('.error')
+const param = document.querySelectorAll('p')
+const errors = document.querySelectorAll('.error')
 
-// errors.forEach((errors) => {
-//     console.log('error')
-// })
+errors.forEach((errors) => {
+    console.log('error')
+})
 
-// param.forEach((param) => {
-//     console.log(param)
-// })
+param.forEach((param) => {
+    console.log(param)
+})
 
-// console.log(param)
+console.log(param)
 
 
 
