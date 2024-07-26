@@ -659,10 +659,10 @@ loginn();
 
 // arrow functions
 
-// const greet = () => 'hello world';
+const greet = () => 'hello world';
 
-// const result = greet();
-// console.log(result)
+const result = greet();
+console.log(result)
 
 
 
