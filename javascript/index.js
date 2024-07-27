@@ -659,16 +659,16 @@ loginn();
 
 // arrow functions
 
-const greet = () => 'hello world';
+// // const greet = () => 'hello world';
 
-const result = greet();
-console.log(result)
+// // const result = greet();
+// // console.log(result)
 
 
 
-const calradius = (radius) =>  40 * 30 ;
-const  result  = calradius();
-console.log(result)
+// const calradius = (radius) =>  40 * 30 ;
+// const  result  = calradius();
+// console.log(result)
 
  
 
