@@ -52,31 +52,7 @@ taskList.addEventListener('click',(e) => {
 
 
 
-// //Get fileds
-// const taskInput = document.getElementById("task-input");
-// const addTaskBtn = document.getElementById('add-task-btn');
-// const tasklist = document.getElementById("task-list");
 
-// //function to add task
-// function addTask(){
-//     const task = taskInput.value.trim();
-
-//     if(task){
-//    const li  =  document.createElement('li');
-//         li.textContent = task;
-//         tasklist.appendChild(li);
-//         taskInput.value = "";
-//     }
-// }
-
-
-// addTaskBtn.addEventListener('click', addTask);
-
-// tasklist.addEventListener('click',(e) => {
-//     if(e.target.tagName === "LI"){
-//         e.target.remove();
-//     }
-// })
 
 
 
