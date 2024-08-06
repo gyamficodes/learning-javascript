@@ -22,7 +22,7 @@ document.getElementById('mybutton').onclick = function(){
 //printig
 const names = ['monday', 'tuesday', 'wenesday', 'thursday', 'friday'];
 
-const elment= document.getElementById('weekdays');
+const elment = document.getElementById('weekdays');
 
 let html = '';
 for(items of names){
