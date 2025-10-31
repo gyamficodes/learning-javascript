@@ -90,3 +90,78 @@ btn.addEventListener("click", cangeBoxColor);
 
 const frined = ["john", "doe", "smith"];
 console.log(typeof frined);
+
+
+
+//conditions 
+
+// if(hour > 18){
+//     console.log("Good evening");
+// }else{
+//     console.log("Good day");
+// }
+
+//nested condionnals
+
+// if(country == "USA"){
+//   if(age >= 18){
+//     console.log("You are eligible to vote");
+//   }
+// }
+
+// Nested if statements can make your code more complex.
+// A better solution is to use the logical AND operator:
+
+const country = "USA";
+if(country == "USA" && age >= 18){
+  console.log("You are eligible to vote");
+}
+
+
+//functions 
+function  getName(name, age) {
+  return `${name} is ${age} years old`;
+}
+
+getName("John", 30);
+
+
+// Examples
+// All the examples below, create a JavaScript object with 4 properties.
+
+// Create an Object
+const personInfo = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+// person.eyeColor = "green"; // Change property value
+
+//Accessing JavaScript Properties
+//  console.log(person.firstName); // John
+// persson.nationality = "English";
+
+console.log(personInfo);
+console.log(personInfo.eyeColor);
+console.log(Object.keys(personInfo) )
+
+delete personInfo.age; // Delete property
+
+
+//JavaScript Object Methods
+const Workers = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+
+  fullName: function(){
+    return this.firstName + " " + this.lastName;
+  }
+}
+console.log(Workers.fullName());
+
+
+for( [key, value] of Object.entries(Worker)){
+  console.log(`${key}: ${value}`);
+}
+
+
+
+
+
