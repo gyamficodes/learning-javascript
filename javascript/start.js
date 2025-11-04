@@ -163,5 +163,21 @@ for( [key, value] of Object.entries(Worker)){
 
 
 
+//JavaScript Object Methods
+const Children = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+
+  fullName: function(){
+    return this.firstName + " " + this.lastName;
+  }
+}
+console.log(Children.fullName());
+
+
+for( [key, value] of Object.entries(Children)){
+  console.log(`${key}: ${value}`);
+}
 
 
