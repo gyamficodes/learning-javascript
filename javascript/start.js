@@ -169,15 +169,26 @@ const Children = {
   lastName: "Doe",
   id: 5566,
 
-  fullName: function(){
-    return this.firstName + " " + this.lastName;
-  }
+  // fullName: function(){
+  //   return this.firstName + " " + this.lastName;
+  // }
 }
-console.log(Children.fullName());
+// console.log(Children.fullName());
 
 
 for( [key, value] of Object.entries(Children)){
   console.log(`${key}: ${value}`);
 }
+
+
+// Dates and Time 
+const d = new Date();
+console.log(d.toString(), d.getFullYear());
+
+
+const myBirthDay = new Date(year, month, day)
+
+console.log(myBirthDay.toDateString());
+
 
 
