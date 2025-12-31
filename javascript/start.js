@@ -181,14 +181,53 @@ for( [key, value] of Object.entries(Children)){
 }
 
 
-// Dates and Time 
+// // Dates and Time 
 const d = new Date();
 console.log(d.toString(), d.getFullYear());
 
 
-const myBirthDay = new Date(year, month, day)
+const myBirthDay = new Date()
 
-console.log(myBirthDay.toDateString());
+console.log(myBirthDay.toString());
+
+
+const dd = new Date();
+
+console.log('ans',dd.toDateString(), dd.toUTCString()); // method converts a date to a more readable format:
+
+
+//JavaScript Date Formats
+
+
+const dt =  new Date('2025-11-10')
+console.log('h',dt)
+
+
+let userNames;
+document.getElementById('myBt').onclick = function(){
+ userNames = document.getElementById('myInput').value;
+  console.log(userNames)
+}
+
+const myDate = new Date();
+const texting = myDate.constructor()
+console.log('texting',texting)
+
+
+// Arrays 
+const fruiting = ["Banana", "Orange", "Apple", "Mango"];
+const newArray =  new Array("Banana", "Orange", "Apple", "Mango");
+console.log(fruiting, newArray);
+
+// conver to string
+console.log(fruiting.toString());
+document.querySelector('.demo').innerHTML = fruiting.join(" - ");
+
+//Array properties and methods
+fruiting.map((e) => {
+  console.log(e);
+})
+
 
 
 
