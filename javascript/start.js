@@ -227,7 +227,40 @@ document.querySelector('.demo').innerHTML = fruiting.join(" - ");
 fruiting.map((e) => {
   console.log(e);
 })
+console.log(fruiting.sort());
+// fruiting.length();
+// fruiting.push("Kiwi");
+// fruiting.pop();
 
+//looping arrays element 
+let text = "<ul>";
+for(let i=0; i< fruiting.length; i++){
+  text += `<li> ${fruiting[i]} </li>`;
+}
+document.querySelector('.demo').innerHTML = text + "</ul>";
 
+//for each
+fruiting.forEach((items) => {
+  console.log('items',items);
+})
 
+//nested arrays in object 
+
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+}
+
+// here we use nested for loops to print out the names and models of each car:
+for(let i in myObj.cars){
+  console.log('cars', myObj.cars[i].name);
+  for(let j in myObj.cars[i].models){
+    console.log('models', myObj.cars[i].models[j]);
+  }
+}
 
