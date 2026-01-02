@@ -232,6 +232,8 @@ console.log(fruiting.sort());
 // fruiting.push("Kiwi");
 // fruiting.pop();
 
+
+
 //looping arrays element 
 let text = "<ul>";
 for(let i=0; i< fruiting.length; i++){
@@ -263,4 +265,12 @@ for(let i in myObj.cars){
     console.log('models', myObj.cars[i].models[j]);
   }
 }
+
+console.log(fruiting.at(2)); // returns "Apple", the item at index 2.
+console.log(fruiting.join(" , ")); // returns "Banana * Orange * Apple * Mango".
+
+
+
+
+
 
