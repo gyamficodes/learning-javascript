@@ -268,9 +268,17 @@ for(let i in myObj.cars){
 
 console.log(fruiting.at(2)); // returns "Apple", the item at index 2.
 console.log(fruiting.join(" , ")); // returns "Banana * Orange * Apple * Mango".
+// fruiting.shift();
+console.log(fruiting.unshift("Pineapple")); // adds "Pineapple" to the beginning of the array
+console.log(fruiting.concat(newArray)); // merges two arrays
+fruiting.splice(2, 0, "Lemon", "Kiwi"); // adds two new items at index 2
+fruiting.slice(2, 4); // returns a new array with elements from index 2 to 4
 
+//JavaScript Array Search
+fruiting.indexOf("Apple"); // returns 2 / method searches an array for an element value and returns its position.
+fruiting.lastIndexOf("Apple");  //is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+fruiting.includes("Mango"); // returns true / method returns true if an array contains a specified element.
+fruiting.find((item) => item.length > 3); // returns "Mango" / method returns the value of the first element that passes a test.
+fruiting.findIndex((item) => item.length > 3); // returns 4 / method returns the index of the first element that passes a test.
 
-
-
-
-
+//JavaScript Array Sort
