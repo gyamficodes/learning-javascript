@@ -282,3 +282,5 @@ fruiting.find((item) => item.length > 3); // returns "Mango" / method returns th
 fruiting.findIndex((item) => item.length > 3); // returns 4 / method returns the index of the first element that passes a test.
 
 //JavaScript Array Sort
+
+fruiting.sort(); // sorts the array alphabetically
