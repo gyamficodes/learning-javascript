@@ -284,3 +284,6 @@ fruiting.findIndex((item) => item.length > 3); // returns 4 / method returns the
 //JavaScript Array Sort
 
 fruiting.sort(); // sorts the array alphabetically
+fruiting.reverse(); // reverses the order of the array elements
+fruiting.toSorted();
+fruiting.toReversed();
