@@ -287,3 +287,31 @@ fruiting.sort(); // sorts the array alphabetically
 fruiting.reverse(); // reverses the order of the array elements
 fruiting.toSorted();
 fruiting.toReversed();
+
+//JavaScript Array forEach()
+const phones = ["iPhone", "Samsung", "Motorola", "Nokia", "Sony", "HTC"];
+
+phones.forEach((itme) => {
+  console.log(itme.toUpperCase());
+})
+
+const mapNumbers =  [2,4,6,8];
+const newNum = mapNumbers.map((num) => num * 2);
+console.log('newNum',newNum);
+
+
+//JavaScript Array filter()
+const filterNum =  [12,5,8,130,44];
+const newFilter = filterNum.filter((e) => e  >  10 );
+console.log('newFilter',newFilter);
+
+
+//JavaScript Array reduce()
+const reduceNum =  [1,2,3,4];
+
+const addDatas = reduceNum.reduce((accumulatar , num) => accumulatar + num, 0);
+console.log('addDatas',addDatas);
+
+
+
+
