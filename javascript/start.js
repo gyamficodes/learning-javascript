@@ -312,6 +312,30 @@ const reduceNum =  [1,2,3,4];
 const addDatas = reduceNum.reduce((accumulatar , num) => accumulatar + num, 0);
 console.log('addDatas',addDatas);
 
+// JavaScript Array every()
+const everyNum =  [12,54,18,130,44];
+const allOver10 = everyNum.every((e) => e  >  10 );
+console.log('allOver10',allOver10);
 
+//JavaScript Array some()
+const someNum =  [2,5,8,1,4];
+const someOver10 = someNum.some((e) => e  >  10 );
+console.log('someOver10',someOver10);
 
+//JavaScript Array flat()
+const flatNum =  [1,2,[3,4],[5,6]];
+const newFlat = flatNum.flat();
+console.log('newFlat',newFlat);
 
+//JavaScript Array flatMap()
+const flatMapNum =  [1,2,3,4];
+const newFlatMap = flatMapNum.flatMap((e) => [e * 2]);
+console.log('newFlatMap',newFlatMap);
+
+//JavaScript Array keys()
+const keysNum =  [10,20,30];
+const keys = keysNum.keys();
+
+//JavaScript Array entries()
+const entriesNum =  [10,20,30];
+const entries = entriesNum.entries();
