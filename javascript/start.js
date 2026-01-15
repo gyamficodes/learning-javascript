@@ -339,3 +339,5 @@ const keys = keysNum.keys();
 //JavaScript Array entries()
 const entriesNum =  [10,20,30];
 const entries = entriesNum.entries();
+
+// Experience the Best in Hospitality
