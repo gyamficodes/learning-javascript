@@ -341,3 +341,39 @@ const entriesNum =  [10,20,30];
 const entries = entriesNum.entries();
 
 // Experience the Best in Hospitality
+
+
+
+
+for(let i = 0; i < 10; i++){
+  console.log('looping', i);
+
+}
+
+
+//JavaScript Sets
+const letters = new Set(['a', 'b', 'c']);
+
+//methods
+letters.add("d");  //add new values 
+letters.size();  //size of the set
+letters.has("a"); // returns true
+letters.delete('b');
+// letters.clear(); // removes all elements
+letters.values(); // returns an iterator with all the values in the set
+letters.entries(); // returns an iterator with [value, value] pairs
+
+for(let Letters of letters){
+  console.log('set letters', Letters);
+}
+
+const eachData = letters.forEach((e) =>  {
+  console.log('for each set', e);
+});
+
+
+//JavaScript Set Logic
+
+
+
+
