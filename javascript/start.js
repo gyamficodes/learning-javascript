@@ -373,14 +373,30 @@ const eachData = letters.forEach((e) =>  {
 
 
 //JavaScript Set Logic
-const setA = new Set(['a','b','c']);
-const setB = new Set(['b','c','d']);
+const setA = new Set(['a','b','c','e']);
+const setB = new Set(['b','c','d','e']);
 
 //union
 const setC = new Set([...setA, ...setB]);
 console.log('union',setC);
 
+//intersection
+const setD = new Set([...setA].filter(x => setB.has(x)));
+console.log('intersection',setD);
 
+//difference 
+const setE = new Set([...setA].filter(e => !setB.has(e)));
+console.log('difference',setE);
+
+//The symmetricDifference() Method  method returns a new set containing elements which are in this set or in the argument set, but not in both
+const symmetricDifference = (set1, set2) => {
+  const difference1 = new Set([...set1].filter(x => !set2.has(x)));
+  const difference2 = new Set([...set2].filter(x => !set1.has(x)));
+  return new Set([...difference1, ...difference2]);
+}
+ 
+const setF = symmetricDifference(setA, setB);
+console.log('symmetricDifference',setF);
 
 
 
