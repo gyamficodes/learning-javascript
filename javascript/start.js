@@ -399,4 +399,47 @@ const setF = symmetricDifference(setA, setB);
 console.log('symmetricDifference',setF);
 
 
+/// The isSubsetOf() Method method returns true if this set is a subset of the argument set.
 
+// let isSubset = new Set([setA].every(v => setB.has((v))))
+// console.log('isSubset',isSubset);
+
+// The WeakSet Object
+// A JavaScript WeakSet is a collection of values where the values must be objects.
+// A WeakSet holds weak references to its values.
+
+let ws1 = new WeakSet();
+
+let obj1 = {fname:"John", lname:"Doe"};
+
+ws1.add(obj1);
+
+console.log('weakset',ws1.has(obj1)); // true
+
+//The Map Object
+
+const fruits = new Map(
+[["apples", 500], ["bananas", 300], ["oranges", 200]]
+);
+
+// Map methods
+// fruits.set("grapes", 400); // add new item
+// fruits.delete("bananas"); // remove item
+// fruits.get("apples"); // get item value
+// fruits.size; // size of the map
+// fruits.has("oranges"); // returns true
+// fruits.clear(); // removes all items
+
+fruits.forEach((value, key) => {
+  console.log(`${key}: ${value}`);
+} )
+
+
+for( let [key, value] of fruits.entries){
+  console.log(`${key} = ${value}`);
+}
+
+fruits.keys();
+
+
+//JavaScript Loops
