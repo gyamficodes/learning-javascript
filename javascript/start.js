@@ -435,7 +435,7 @@ fruits.forEach((value, key) => {
 } )
 
 
-for( let [key, value] of fruits.entries){
+for( let [key, value] of fruits.entries()){
   console.log(`${key} = ${value}`);
 }
 
@@ -443,3 +443,68 @@ fruits.keys();
 
 
 //JavaScript Loops
+
+// The for loop is used when the number of iterations is known.
+// It consists of an initialization (exp1), a condition (exp2), and an increment expression (exp3).
+
+// The for loop is used when the number of iterations is known.
+
+for( let i = 0 ; i < 5; i++ ){
+  console.log('for loop', i);
+}
+
+// The while Loop
+// The while loop executes a block of code as long as a specified condition evaluates to true.
+
+
+
+let j = 0;
+while( j < 5 ){
+  console.log('while loop', j);
+  j++
+}
+
+
+// The do...while Loop
+// The do...while loop is a variant of the while loop.
+// This loop will execute the code block once, before checking if the condition is true,
+// then it will repeat the loop as long as the condition is true.
+
+
+let k = 0;
+do{
+  console.log('do while loop', k);
+  k++;
+}while( k < 5 );
+
+// The for...in Loop
+// The for...in loop is used to iterate over the properties of an object.
+
+const personA = {fname:"John", lname:"Doe", age:25};
+
+for(e in personA){
+  console.log(`${e}: ${personA[e]}`);
+}
+
+
+// The for...of Loop
+// The for...of Loop
+// The for...of loop iterates over the values of iterable objects such as arrays, strings, Maps, Sets, and NodeLists.
+
+let lp = [{Name: " Gyamfi John"}]
+
+for(e of lp ){
+ console.log('for of loop', lp)
+}
+
+
+//JavaScript Generators
+function* generateNumbers() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+
+//JavaScript Math Object
+//The JavaScript Math object allows you to perform mathematical tasks.
