@@ -508,3 +508,26 @@ function* generateNumbers() {
 
 //JavaScript Math Object
 //The JavaScript Math object allows you to perform mathematical tasks.
+
+
+// JavaScript provides 8 mathematical constants that can be accessed as Math properties:
+
+// Example
+// Math.E        // returns Euler's number
+// Math.PI       // returns PI
+// Math.SQRT2    // returns the square root of 2
+// Math.SQRT1_2  // returns the square root of 1/2
+// Math.LN2      // returns the natural logarithm of 2
+// Math.LN10     // returns the natural logarithm of 10
+// Math.LOG2E    // returns base 2 logarithm of E
+// Math.LOG10E   // returns base 10 logarithm of E
+
+Math.round(5.7);    // returns 5
+Math.ceil(5.2);     // returns 6
+Math.floor(5.7);    // returns 5
+Math.pow(4, 2);    // returns 16
+Math.sqrt(64);     // returns 8
+Math.random()
+
+
+
