@@ -483,7 +483,7 @@ do{
 const personA = {fname:"John", lname:"Doe", age:25};
 
 for(e in personA){
-  console.log(`${e}: ${personA[e]}`);
+  console.log(`${e}: ${personA.fname}`);
 }
 
 
@@ -499,11 +499,11 @@ for(e of lp ){
 
 
 //JavaScript Generators
-function* generateNumbers() {
-  yield 1;
-  yield 2;
-  yield 3;
-}
+// function* generateNumbers() {
+//   yield 1;
+//   yield 2;
+//   yield 3;
+// }
 
 
 //JavaScript Math Object
@@ -522,12 +522,24 @@ function* generateNumbers() {
 // Math.LOG2E    // returns base 2 logarithm of E
 // Math.LOG10E   // returns base 10 logarithm of E
 
-Math.round(5.7);    // returns 5
-Math.ceil(5.2);     // returns 6
-Math.floor(5.7);    // returns 5
-Math.pow(4, 2);    // returns 16
-Math.sqrt(64);     // returns 8
-Math.random()
+// Math.round(5.7);    // returns 5
+// Math.ceil(5.2);     // returns 6
+// Math.floor(5.7);    // returns 5
+// Math.pow(4, 2);    // returns 16
+// Math.sqrt(64);     // returns 8
+// Math.random()
 
 
 
+const handdleGetRandomNumber = document.querySelector('.RandomBTN');
+
+
+function getRandomInt() {
+console.log(Math.floor(Math.random() * 100 + 1))
+}
+ 
+// function getRandomInt(min , max) {
+//  console.log(Math.floor(Math.random() * ( max - min) ) + min)
+// }
+
+handdleGetRandomNumber.addEventListener('click',getRandomInt);
