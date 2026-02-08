@@ -544,3 +544,51 @@ console.log(Math.floor(Math.random() * 100 + 1))
 
 handdleGetRandomNumber.addEventListener('click',getRandomInt);
 
+// A Regular Expression is a sequence of characters that forms a search pattern.
+
+// Regex is a common shorthand for a regular expression.
+
+// JavaScript RegExp is an Object for handling Regular Expressions.
+
+// RegExp are be used for:
+
+//     Text searching
+//     Text replacing
+//     Text validation
+
+
+// w3schools  is a pattern (to be used in a search).
+// i  is a modifier (modifies the search to be case-insensitive).
+let myText = "visit W3schools"
+let n = myText.search(/w3schools/i) // this the  regular expression.
+console.log(n)
+
+
+
+// Using String Methods
+
+// Regular expressions are often used with the string methods:
+// Method	Description
+// match(regex) 	Returns an Array of results
+// replace(regex) 	Returns a new String
+// search(regex) 	Returns the index of the first match
+
+//using match
+let m = myText.match(/w3schools/i)
+console.log('match',m);
+
+//using replace 
+let r = myText.replace(/Microsoft/i, "W3Schools")
+console.log('replace',r);
+
+//using search
+let s = myText.search(/W3Schools/);
+console.log('search', s)
+
+
+// RexExp Alternation (OR)
+// In a regular expression an alternation is denoted with a vertical line character |.
+// An alternation matches any of the alternatives separated with |.
+
+
+ 
