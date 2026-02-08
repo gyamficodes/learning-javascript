@@ -543,3 +543,4 @@ console.log(Math.floor(Math.random() * 100 + 1))
 // }
 
 handdleGetRandomNumber.addEventListener('click',getRandomInt);
+
