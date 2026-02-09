@@ -575,20 +575,60 @@ console.log(n)
 
 //using match
 let m = myText.match(/w3schools/i)
-console.log('match',m);
+console.log('match returns an array',m);
 
 //using replace 
 let r = myText.replace(/Microsoft/i, "W3Schools")
-console.log('replace',r);
+console.log('replace returns strings',r);
 
 //using search
 let s = myText.search(/W3Schools/);
-console.log('search', s)
+console.log('search returns index of the first match ', s)
 
 
 // RexExp Alternation (OR)
 // In a regular expression an alternation is denoted with a vertical line character |.
 // An alternation matches any of the alternatives separated with |.
 
+let myColors = "Black, white, red, green, blue, yellow.";
+let colorResult = text.match(/red|green|blue/g);
 
- 
+
+// RegExp \d (digits) Metacharacter
+// The \d metacharacter matches digits.
+
+// Example
+// A global search for digits in a string:
+
+let texting1 = "Give 100%!";
+const patterning = /\d/g;
+
+let output = texting1.match(patterning);
+console.log('output',output);
+
+// RegExp \w (word) Metacharacter
+// The \w metacharacter matches word characters.
+
+// A word character is a character a-z, A-Z, 0-9, including _ (underscore).
+
+// Example
+// A global search for word characters:
+
+let textInput = "Give 100%!";
+const pattern = /\w/g;
+
+let result = textInput.match(pattern);
+console.log('result',result);
+
+
+
+
+
+
+
+
+
+
+
+
+
