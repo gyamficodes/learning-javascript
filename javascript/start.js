@@ -621,14 +621,119 @@ let result = textInput.match(pattern);
 console.log('result',result);
 
 
+//Data Types in JavaScript
+// JavaScript has 7 data types that can be divided into 2 categories:
+// 1. Primitive data types Numeric And Non-Numeric
+// : string, number, boolean, null, undefined, symbol
+// 2. Non-primitive data type: object = arrays, functions, dates, RegExp, set, Map etc.
+
+
+// // Number
+// let length = 16;
+// let weight = 7.5;
+
+// // BigInt
+// let x = 1234567890123456789012345n;
+// let y = BigInt(1234567890123456789012345)
+// // Strings
+// let color = "Yellow";
+// let lastName = "Johnson";
+
+// // Boolean
+// let x = true;
+// let y = false;
+
+// // Undefined
+// let x;
+// let y;
+
+// // Null
+// let x = null;
+// let y = null;
+
+// // Symbol
+// const x = Symbol();
+// const y = Symbol();
+
+// // Object
+// const person = {firstName:"John", lastName:"Doe"};
+
+// // Array Object
+// const cars = ["Saab", "Volvo", "BMW"];
+
+// // Date Object
+// const date = new Date("2022-03-25");
+
+
+//toString 
+
+const fruitsSting = ["Banana", "Orange", "Apple", "Mango"];
+
+let myList = fruitsSting.toString()
+console.log('myList',myList)
+
+const todayDate = new Date();
+let textDate = todayDate.toString();
+console.log('textDate',textDate)
+
+//objext to string
+let person = {
+  firstname: "John",
+  lastname: "Doe",
+}
+console.log('person',person.toString())
 
 
 
+//JavaScript Type Conversion 
+// Converting Strings to Numbers
+let str = "123";
+let num = Number(str);
+console.log('num',num);
+
+let routine = 'Learning JavaScript';
+
+let Myday = routine === 'Learning JavaScript' ? 'Great day!' : 'Keep learning!';
+console.log('Myday',Myday);
+console.log('typeof Myday', typeof Myday); // returns "string"
+
+
+//JavaScript Errors
+
+
+try {
+  1 + v
+}catch(err){
+  console.log('Error caught:', err.message);
+}
 
 
 
+// Reference Errors  A ReferenceError occurs if you use (reference) a variable that does not exist.
+let x = 5;
+
+try {
+  x = y + 1;
+} catch(err) {
+  let text = err.name;
+}
 
 
+// JavaScript Type Errors
+// A Type Error occurs when a value is of the wrong type or an operation is invalid on that type.
+
+ 
+let ttNum = 5;
+// ttNum.toUpperCase(); // This will cause a TypeError because toUpperCase() is not a function for numbers.
+// try {
+//   Anna(5);
+// } catch(err) {
+//   let text = err.name;
+// } 
 
 
-
+//JavaScript Syntax Errors
+// JavaScript Syntax Errors
+// A Syntax Error occurs when the code violates JavaScript's grammar rules.
+// // This line cannot be parsed by JavaScript
+// let fName = "John); 
