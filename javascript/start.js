@@ -740,3 +740,26 @@ let ttNum = 5;
 
 
 
+//JavaScript Silent Errors
+//JavaScript Silent Errors
+
+// let result = "Not Active.";
+// let isActive = false;
+
+// // ❌ Assignment, not comparison
+// if (isActive = true) {
+//   let result = "Active!";
+// }
+
+
+
+let isActive = false;
+
+if (isActive) {
+  console.log("The user is active.");
+} else {
+  console.log("The user is not active.");
+}
+
+let myR = isActive ? "Active!" : "Not Active.";
+console.log('myR',myR);
