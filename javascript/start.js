@@ -763,3 +763,30 @@ if (isActive) {
 
 let myR = isActive ? "Active!" : "Not Active.";
 console.log('myR',myR);
+
+//JavaScript Debugging
+//Debugging means finding and fixing mistakes (bugs) in your code.
+// When code fails, beginners often guess what is wrong.
+
+// Debugging is the opposite: you check facts.
+
+// A good debugging habit is: Read → Reproduce → Reduce → Fix
+
+//     Read the error
+//     Reproduce the problem
+//     Reduce to a small example
+//     Then fix it. 
+
+console.warn("Hello world")
+
+let users = [
+  {name: "John", age: 25},
+  {name: "Anna", age: 30}
+];
+
+
+console.table(users);
+
+
+
+// JavaScript Debugging Breakpoints
