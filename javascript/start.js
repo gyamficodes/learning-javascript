@@ -790,3 +790,101 @@ console.table(users);
 
 
 // JavaScript Debugging Breakpoints
+
+function addNum(a,b){
+  let result = a + b;
+  return result;
+}
+
+document.getElementById("demo").innerHTML = addNum(10, 10);
+
+
+// JavaScript Style Guide
+// Variable Names
+
+// let firstName = "Hannah"
+
+
+// Code Indentation
+// Always use 2 spaces for indentation of code blocks:
+
+function setRoundedNum(num) {
+console.log((5 / 9) *  (num - 32)) 
+}
+
+setRoundedNum(50);
+
+
+// Statement Rules
+// General rules for simple statements:
+// Always end a simple statement with a semicolon.
+
+const cars = ["Volvo", "Saab", "Fiat"];
+
+// General rules for complex (compound) statements:
+
+//     Put the opening bracket at the end of the first line.
+//     Use one space before the opening bracket.
+//     Put the closing bracket on a new line, without leading spaces.
+//     Do not end a complex statement with a semicolon.
+
+
+for (let i = 0; i < 5; i++) {
+  x += i;
+} 
+
+
+// Don't Use new Object()
+//     Use "" instead of new String()
+//     Use 0 instead of new Number()
+//     Use false instead of new Boolean()
+//     Use {} instead of new Object()
+//     Use [] instead of new Array()
+//     Use /()/ instead of new RegExp()
+//     Use function (){} instead of new Function()
+
+
+
+
+// Use === Comparison
+
+// The == comparison operator always converts (to matching types) before comparison.
+
+// The === operator forces comparison of values and type:
+// Example
+// 0 == "";        // true
+// 1 == "1";       // true
+// 1 == true;      // true
+
+// 0 === "";       // false
+// 1 === "1";      // false
+// 1 === true;     // false 
+
+
+// End Your Switches with Defaults
+// Always end your switch statements with a default. Even if you think there is no need for it.
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
+  default:
+    day = "Unknown";
+}
