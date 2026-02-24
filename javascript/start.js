@@ -888,3 +888,33 @@ switch (new Date().getDay()) {
   default:
     day = "Unknown";
 }
+
+//JavaScript Performance
+// Reduce Activity in Loops
+
+// Loops are often used in programming.
+// Each statement in a loop, including the for statement, is executed for each iteration of the loop.
+// Statements or assignments that can be placed outside the loop will make the loop run faster. 
+
+let  i = 0;
+do{
+  console.log('do while loop',i)
+  i++
+}while( i < 5 );
+
+let devicePc = ['Mouse', 'Keyboard', 'Laptop'];
+
+for (let i = 0; i < devicePc.length; i++) {
+  console.log(devicePc[i]);
+}
+
+
+let  myName = () =>  {
+ let quantity  = 10
+ console.log('Agender', quantity > 5 ? "Adult" : "small")
+}
+
+myName();
+
+
+
