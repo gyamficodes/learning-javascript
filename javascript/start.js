@@ -916,5 +916,27 @@ let  myName = () =>  {
 
 myName();
 
+//Html Dom
+// The HTML DOM is a tree of Nodes that represents an HTML Page.
+// The DOM Tree
+// The DOM Tree
+
+// When a web page loads, the browser creates a tree-like representation of the HTML document.
+
+// Each part of the document are nodes in the tree:
+// Node 	Description
+// Document 	Owner of all nodes in the document
+// <html> 	Element Node
+// <head> 	Element Node
+// <body> 	Element Node
+// <a> 	Element Node
+// href 	Attribute Node
+// <h1> 	Element Node
+// My Header 	Text Node
 
 
+//Accessing HTML Elements
+
+const myPara = document.getElementById("Hello");
+
+myPara.innerHTML = "Hello World";
