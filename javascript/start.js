@@ -936,7 +936,31 @@ myName();
 
 
 //Accessing HTML Elements
-
+// Access a paragraph Element
 const myPara = document.getElementById("Hello");
 
+// Change the content of the Element
 myPara.innerHTML = "Hello World";
+
+myPara.textContent = "Bye"
+// In the example above, the getElementById method used id="demo" to find the element.
+
+//     id="demo" is an HTML property
+//     getElementById() is a DOM Method
+//     innerHTML is a DOM Property
+
+
+// HTML DOM API
+
+let codinng = "Night"
+
+const me = codinng === 'Night' ? "code" : "sleep"
+
+
+
+// JavaScript is the Language
+// The DOM API is a standard for how to get, change, add, or delete HTML DOM elements.
+// JavaScript is the language used in browsers to access the DOM through the API.
+
+// Selecting DOM Elements
+
