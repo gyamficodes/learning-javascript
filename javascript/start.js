@@ -964,3 +964,31 @@ const me = codinng === 'Night' ? "code" : "sleep"
 
 // Selecting DOM Elements
 
+// Finding HTML Element by Id
+// document.getElementById('demo')
+
+//by tagname 
+// document.getElementsByTagName("li")
+
+//by class name
+// const x = document.getElementsByClassName("intro")+
+
+// Finding HTML Elements by CSS Selectors
+// const myPara = document.querySelector(".demo");
+
+
+// The querySelectorAll() Method
+// const myItems = document.querySelector(".demo");
+
+
+// Change the content of a <p> element:
+let myContent = document.getElementById('Content');
+myContent.innerHTML = "Fa Akomapa Nante";
+
+// Changing an Attribute
+// Changes the value of the src attribute of an <img> element:
+
+let upDateImage =  document.getElementById("im");
+upDateImage.src = "/images/b2.jpg";
+
+
