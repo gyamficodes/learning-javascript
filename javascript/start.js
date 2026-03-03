@@ -992,3 +992,25 @@ let upDateImage =  document.getElementById("im");
 upDateImage.src = "/images/b2.jpg";
 
 
+
+document.write(Date())
+
+
+
+//Changing HTML Style
+
+
+let helloWorld = document.querySelector(".bb")
+helloWorld.style.color = "red"
+
+//Using Events
+const udateHelloWord = () => {
+helloWorld.style.color = "Green"
+}
+let nn = document.querySelector(".nn");
+
+nn.addEventListener('click', udateHelloWord);
+
+
+
+// JavaScript Events
