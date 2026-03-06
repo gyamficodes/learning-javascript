@@ -18,6 +18,7 @@ const increaseCounter = () => {
 };
 
 
+
 //decrease counter
 const decreaseCounter = () => {
     count--;
