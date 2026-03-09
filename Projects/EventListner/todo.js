@@ -34,3 +34,7 @@ const removeTask = (i) => {
     //   saveTask();
     displayTask();
 }
+
+
+
+// clear all task
