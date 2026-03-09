@@ -21,7 +21,7 @@ const addTask = () => {
        tasks.push(text);
         displayTask();
         text.value = "";
-        // saveTask();
+        saveTask();
         displayTask();
     }
     
@@ -31,10 +31,33 @@ const addTask = () => {
 ///function to delete task
 const removeTask = (i) => {
     tasks.splice(i, 1)
-    //   saveTask();
+      saveTask();
     displayTask();
 }
 
 
 
 // clear all task
+const  clearAll = () => {
+ tasks.splice(0, tasks.length);
+   saveTask();
+ displayTask();
+}
+
+
+// save task to local storage
+const saveTask = () => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+// load task from local storage
+const loadTask = () => {
+    let save = localStorage.getItem("tasks");
+    if(save !== null){
+        tasks = JSON.parse(save);
+    }
+};
+
+
+loadTask();
+displayTask();
