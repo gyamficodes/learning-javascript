@@ -23,8 +23,10 @@ const addTask = () => {
         text.value = "";
         saveTask();
         displayTask();
+        alert("Task added successfully");
     }
-    
+
+
  
 }
 
