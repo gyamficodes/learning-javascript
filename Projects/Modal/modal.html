@@ -5,26 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal Popup</title>
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            
-        }
-        .main-container{
-            width: 100%;
-            height: 100vh;
-            margin: auto;
-        }
-    </style>
+   <style>
+/* The overlay (background) */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Show the modal */
+.modal-overlay.show {
+  display: block;
+}
+
+/* The modal box */
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Close button */
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
     
 
+<button id="openBtn">Open Modal</button>
 
-    <div class="main-container">
 
-    </div>
+<div id="modal" class="modal-overlay">
+  <div class="modal-box">
+    <button id="closeBtn" class="modal-close">×</button>
+    <h3>Hello!</h3>
+    <p>This is a modal popup.</p>
+  </div>
+</div>
 
     
     <script type="text/javascript" src="/Projects/Modal/modal.js"></script>
