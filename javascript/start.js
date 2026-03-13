@@ -1012,8 +1012,5 @@ let nn = document.querySelector(".nn");
 nn.addEventListener('click', udateHelloWord);
 
 
+//JavaScript Functios
 
-// JavaScript Events
-
-
-// project 
