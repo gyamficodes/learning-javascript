@@ -999,7 +999,6 @@ document.write(Date())
 
 //Changing HTML Style
 
-
 let helloWorld = document.querySelector(".bb")
 helloWorld.style.color = "red"
 
@@ -1012,5 +1011,24 @@ let nn = document.querySelector(".nn");
 nn.addEventListener('click', udateHelloWord);
 
 
-//JavaScript Functios
+//Advanced Functions Study Path
+// Function Declaration
+function myFunction(a, b) {
+  return a * b;
+};
 
+// Function Expression
+const myFunction1 = function(a, b) {
+  return a * b;
+};
+
+
+// Arrow Function
+const addPage = (a,b) =>  a * b;
+
+
+// Function Constructor
+const myFunction2 = new Function("x", "y", "return x * y");
+
+// Function Constructor
+const myFunction3 = new Function("x", "y", "return x * y");
