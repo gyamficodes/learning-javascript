@@ -76,24 +76,19 @@ function changeText() {
 
 // btn.addEventListener("click", changeText);
 
-
 let bulb = document.querySelector(".box");
 
 const cangeBoxColor = () => {
-
-    bulb.style.backgroundColor =  bulb.style.backgroundColor === "yellow" ? "gray" : "yellow";
-
-}
-
+  bulb.style.backgroundColor =
+    bulb.style.backgroundColor === "yellow" ? "gray" : "yellow";
+};
 
 btn.addEventListener("click", cangeBoxColor);
 
 const frined = ["john", "doe", "smith"];
 console.log(typeof frined);
 
-
-
-//conditions 
+//conditions
 
 // if(hour > 18){
 //     console.log("Good evening");
@@ -113,24 +108,27 @@ console.log(typeof frined);
 // A better solution is to use the logical AND operator:
 
 const country = "USA";
-if(country == "USA" && age >= 18){
+if (country == "USA" && age >= 18) {
   console.log("You are eligible to vote");
 }
 
-
-//functions 
-function  getName(name, age) {
+//functions
+function getName(name, age) {
   return `${name} is ${age} years old`;
 }
 
 getName("John", 30);
 
-
 // Examples
 // All the examples below, create a JavaScript object with 4 properties.
 
 // Create an Object
-const personInfo = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+const personInfo = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+};
 // person.eyeColor = "green"; // Change property value
 
 //Accessing JavaScript Properties
@@ -139,10 +137,9 @@ const personInfo = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 
 console.log(personInfo);
 console.log(personInfo.eyeColor);
-console.log(Object.keys(personInfo) )
+console.log(Object.keys(personInfo));
 
 delete personInfo.age; // Delete property
-
 
 //JavaScript Object Methods
 const Workers = {
@@ -150,18 +147,15 @@ const Workers = {
   lastName: "Doe",
   id: 5566,
 
-  fullName: function(){
+  fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
-}
+  },
+};
 console.log(Workers.fullName());
 
-
-for( [key, value] of Object.entries(Worker)){
+for ([key, value] of Object.entries(Worker)) {
   console.log(`${key}: ${value}`);
 }
-
-
 
 //JavaScript Object Methods
 const Children = {
@@ -172,97 +166,87 @@ const Children = {
   // fullName: function(){
   //   return this.firstName + " " + this.lastName;
   // }
-}
+};
 // console.log(Children.fullName());
 
-
-for( [key, value] of Object.entries(Children)){
+for ([key, value] of Object.entries(Children)) {
   console.log(`${key}: ${value}`);
 }
 
-
-// // Dates and Time 
+// // Dates and Time
 const d = new Date();
 console.log(d.toString(), d.getFullYear());
 
-
-const myBirthDay = new Date()
+const myBirthDay = new Date();
 
 console.log(myBirthDay.toString());
 
-
 const dd = new Date();
 
-console.log('ans',dd.toDateString(), dd.toUTCString()); // method converts a date to a more readable format:
-
+console.log("ans", dd.toDateString(), dd.toUTCString()); // method converts a date to a more readable format:
 
 //JavaScript Date Formats
 
-
-const dt =  new Date('2025-11-10')
-console.log('h',dt)
-
+const dt = new Date("2025-11-10");
+console.log("h", dt);
 
 let userNames;
-document.getElementById('myBt').onclick = function(){
- userNames = document.getElementById('myInput').value;
-  console.log(userNames)
-}
+document.getElementById("myBt").onclick = function () {
+  userNames = document.getElementById("myInput").value;
+  console.log(userNames);
+};
 
 const myDate = new Date();
-const texting = myDate.constructor()
-console.log('texting',texting)
+const texting = myDate.constructor();
+console.log("texting", texting);
 
-
-// Arrays 
+// Arrays
 const fruiting = ["Banana", "Orange", "Apple", "Mango"];
-const newArray =  new Array("Banana", "Orange", "Apple", "Mango");
+const newArray = new Array("Banana", "Orange", "Apple", "Mango");
 console.log(fruiting, newArray);
 
 // conver to string
 console.log(fruiting.toString());
-document.querySelector('.demo').innerHTML = fruiting.join(" - ");
+document.querySelector(".demo").innerHTML = fruiting.join(" - ");
 
 //Array properties and methods
 fruiting.map((e) => {
   console.log(e);
-})
+});
 console.log(fruiting.sort());
 // fruiting.length();
 // fruiting.push("Kiwi");
 // fruiting.pop();
 
-
-
-//looping arrays element 
+//looping arrays element
 let text = "<ul>";
-for(let i=0; i< fruiting.length; i++){
+for (let i = 0; i < fruiting.length; i++) {
   text += `<li> ${fruiting[i]} </li>`;
 }
-document.querySelector('.demo').innerHTML = text + "</ul>";
+document.querySelector(".demo").innerHTML = text + "</ul>";
 
 //for each
 fruiting.forEach((items) => {
-  console.log('items',items);
-})
+  console.log("items", items);
+});
 
-//nested arrays in object 
+//nested arrays in object
 
 const myObj = {
   name: "John",
   age: 30,
   cars: [
-     {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-    {name:"BMW", models:["320", "X3", "X5"]},
-    {name:"Fiat", models:["500", "Panda"]}
-  ]
-}
+    { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+    { name: "BMW", models: ["320", "X3", "X5"] },
+    { name: "Fiat", models: ["500", "Panda"] },
+  ],
+};
 
 // here we use nested for loops to print out the names and models of each car:
-for(let i in myObj.cars){
-  console.log('cars', myObj.cars[i].name);
-  for(let j in myObj.cars[i].models){
-    console.log('models', myObj.cars[i].models[j]);
+for (let i in myObj.cars) {
+  console.log("cars", myObj.cars[i].name);
+  for (let j in myObj.cars[i].models) {
+    console.log("models", myObj.cars[i].models[j]);
   }
 }
 
@@ -276,7 +260,7 @@ fruiting.slice(2, 4); // returns a new array with elements from index 2 to 4
 
 //JavaScript Array Search
 fruiting.indexOf("Apple"); // returns 2 / method searches an array for an element value and returns its position.
-fruiting.lastIndexOf("Apple");  //is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+fruiting.lastIndexOf("Apple"); //is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
 fruiting.includes("Mango"); // returns true / method returns true if an array contains a specified element.
 fruiting.find((item) => item.length > 3); // returns "Mango" / method returns the value of the first element that passes a test.
 fruiting.findIndex((item) => item.length > 3); // returns 4 / method returns the index of the first element that passes a test.
@@ -293,69 +277,62 @@ const phones = ["iPhone", "Samsung", "Motorola", "Nokia", "Sony", "HTC"];
 
 phones.forEach((itme) => {
   console.log(itme.toUpperCase());
-})
+});
 
-const mapNumbers =  [2,4,6,8];
+const mapNumbers = [2, 4, 6, 8];
 const newNum = mapNumbers.map((num) => num * 2);
-console.log('newNum',newNum);
-
+console.log("newNum", newNum);
 
 //JavaScript Array filter()
-const filterNum =  [12,5,8,130,44];
-const newFilter = filterNum.filter((e) => e  >  10 );
-console.log('newFilter',newFilter);
-
+const filterNum = [12, 5, 8, 130, 44];
+const newFilter = filterNum.filter((e) => e > 10);
+console.log("newFilter", newFilter);
 
 //JavaScript Array reduce()
-const reduceNum =  [1,2,3,4];
+const reduceNum = [1, 2, 3, 4];
 
-const addDatas = reduceNum.reduce((accumulatar , num) => accumulatar + num, 0);
-console.log('addDatas',addDatas);
+const addDatas = reduceNum.reduce((accumulatar, num) => accumulatar + num, 0);
+console.log("addDatas", addDatas);
 
 // JavaScript Array every()
-const everyNum =  [12,54,18,130,44];
-const allOver10 = everyNum.every((e) => e  >  10 );
-console.log('allOver10',allOver10);
+const everyNum = [12, 54, 18, 130, 44];
+const allOver10 = everyNum.every((e) => e > 10);
+console.log("allOver10", allOver10);
 
 //JavaScript Array some()
-const someNum =  [2,5,8,1,4];
-const someOver10 = someNum.some((e) => e  >  10 );
-console.log('someOver10',someOver10);
+const someNum = [2, 5, 8, 1, 4];
+const someOver10 = someNum.some((e) => e > 10);
+console.log("someOver10", someOver10);
 
 //JavaScript Array flat()
-const flatNum =  [1,2,[3,4],[5,6]];
+const flatNum = [1, 2, [3, 4], [5, 6]];
 const newFlat = flatNum.flat();
-console.log('newFlat',newFlat);
+console.log("newFlat", newFlat);
 
 //JavaScript Array flatMap()
-const flatMapNum =  [1,2,3,4];
+const flatMapNum = [1, 2, 3, 4];
 const newFlatMap = flatMapNum.flatMap((e) => [e * 2]);
-console.log('newFlatMap',newFlatMap);
+console.log("newFlatMap", newFlatMap);
 
 //JavaScript Array keys()
-const keysNum =  [10,20,30];
+const keysNum = [10, 20, 30];
 const keys = keysNum.keys();
 
 //JavaScript Array entries()
-const entriesNum =  [10,20,30];
+const entriesNum = [10, 20, 30];
 const entries = entriesNum.entries();
 
 // Experience the Best in Hospitality
 
-
-
-
-for(let i = 0; i < 10; i++){
-  console.log('looping', i);
-
+for (let i = 0; i < 10; i++) {
+  console.log("looping", i);
 }
 
-
 //JavaScript Sets
-const letters = new Set(['a', 'b', 'c']);
+const letters = new Set(["a", "b", "c"]);
 
 //methods
-// letters.add("d");  //add new values 
+// letters.add("d");  //add new values
 // letters.size();  //size of the set
 // letters.has("a"); // returns true
 // letters.delete('b');
@@ -363,41 +340,39 @@ const letters = new Set(['a', 'b', 'c']);
 // letters.values(); // returns an iterator with all the values in the set
 // letters.entries(); // returns an iterator with [value, value] pairs
 
-for(let Letters of letters){
-  console.log('set letters', Letters);
+for (let Letters of letters) {
+  console.log("set letters", Letters);
 }
 
-const eachData = letters.forEach((e) =>  {
-  console.log('for each set', e);
+const eachData = letters.forEach((e) => {
+  console.log("for each set", e);
 });
 
-
 //JavaScript Set Logic
-const setA = new Set(['a','b','c','e']);
-const setB = new Set(['b','c','d','e']);
+const setA = new Set(["a", "b", "c", "e"]);
+const setB = new Set(["b", "c", "d", "e"]);
 
 //union
 const setC = new Set([...setA, ...setB]);
-console.log('union',setC);
+console.log("union", setC);
 
 //intersection
-const setD = new Set([...setA].filter(x => setB.has(x)));
-console.log('intersection',setD);
+const setD = new Set([...setA].filter((x) => setB.has(x)));
+console.log("intersection", setD);
 
-//difference 
-const setE = new Set([...setA].filter(e => !setB.has(e)));
-console.log('difference',setE);
+//difference
+const setE = new Set([...setA].filter((e) => !setB.has(e)));
+console.log("difference", setE);
 
 //The symmetricDifference() Method  method returns a new set containing elements which are in this set or in the argument set, but not in both
 const symmetricDifference = (set1, set2) => {
-  const difference1 = new Set([...set1].filter(x => !set2.has(x)));
-  const difference2 = new Set([...set2].filter(x => !set1.has(x)));
+  const difference1 = new Set([...set1].filter((x) => !set2.has(x)));
+  const difference2 = new Set([...set2].filter((x) => !set1.has(x)));
   return new Set([...difference1, ...difference2]);
-}
- 
-const setF = symmetricDifference(setA, setB);
-console.log('symmetricDifference',setF);
+};
 
+const setF = symmetricDifference(setA, setB);
+console.log("symmetricDifference", setF);
 
 /// The isSubsetOf() Method method returns true if this set is a subset of the argument set.
 
@@ -410,17 +385,19 @@ console.log('symmetricDifference',setF);
 
 let ws1 = new WeakSet();
 
-let obj1 = {fname:"John", lname:"Doe"};
+let obj1 = { fname: "John", lname: "Doe" };
 
 ws1.add(obj1);
 
-console.log('weakset',ws1.has(obj1)); // true
+console.log("weakset", ws1.has(obj1)); // true
 
 //The Map Object
 
-const fruits = new Map(
-[["apples", 500], ["bananas", 300], ["oranges", 200]]
-);
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200],
+]);
 
 // Map methods
 // fruits.set("grapes", 400); // add new item
@@ -432,15 +409,13 @@ const fruits = new Map(
 
 fruits.forEach((value, key) => {
   console.log(`${key}: ${value}`);
-} )
+});
 
-
-for( let [key, value] of fruits.entries()){
+for (let [key, value] of fruits.entries()) {
   console.log(`${key} = ${value}`);
 }
 
 fruits.keys();
-
 
 //JavaScript Loops
 
@@ -449,54 +424,48 @@ fruits.keys();
 
 // The for loop is used when the number of iterations is known.
 
-for( let i = 0 ; i < 5; i++ ){
-  console.log('for loop', i);
+for (let i = 0; i < 5; i++) {
+  console.log("for loop", i);
 }
 
 // The while Loop
 // The while loop executes a block of code as long as a specified condition evaluates to true.
 
-
-
 let j = 0;
-while( j < 5 ){
-  console.log('while loop', j);
-  j++
+while (j < 5) {
+  console.log("while loop", j);
+  j++;
 }
-
 
 // The do...while Loop
 // The do...while loop is a variant of the while loop.
 // This loop will execute the code block once, before checking if the condition is true,
 // then it will repeat the loop as long as the condition is true.
 
-
 let k = 0;
-do{
-  console.log('do while loop', k);
+do {
+  console.log("do while loop", k);
   k++;
-}while( k < 5 );
+} while (k < 5);
 
 // The for...in Loop
 // The for...in loop is used to iterate over the properties of an object.
 
-const personA = {fname:"John", lname:"Doe", age:25};
+const personA = { fname: "John", lname: "Doe", age: 25 };
 
-for(e in personA){
+for (e in personA) {
   console.log(`${e}: ${personA.fname}`);
 }
-
 
 // The for...of Loop
 // The for...of Loop
 // The for...of loop iterates over the values of iterable objects such as arrays, strings, Maps, Sets, and NodeLists.
 
-let lp = [{Name: " Gyamfi John"}]
+let lp = [{ Name: " Gyamfi John" }];
 
-for(e of lp ){
- console.log('for of loop', lp)
+for (e of lp) {
+  console.log("for of loop", lp);
 }
-
 
 //JavaScript Generators
 // function* generateNumbers() {
@@ -505,10 +474,8 @@ for(e of lp ){
 //   yield 3;
 // }
 
-
 //JavaScript Math Object
 //The JavaScript Math object allows you to perform mathematical tasks.
-
 
 // JavaScript provides 8 mathematical constants that can be accessed as Math properties:
 
@@ -529,20 +496,17 @@ for(e of lp ){
 // Math.sqrt(64);     // returns 8
 // Math.random()
 
-
-
-const handdleGetRandomNumber = document.querySelector('.RandomBTN');
-
+const handdleGetRandomNumber = document.querySelector(".RandomBTN");
 
 function getRandomInt() {
-console.log(Math.floor(Math.random() * 100 + 1))
+  console.log(Math.floor(Math.random() * 100 + 1));
 }
- 
+
 // function getRandomInt(min , max) {
 //  console.log(Math.floor(Math.random() * ( max - min) ) + min)
 // }
 
-handdleGetRandomNumber.addEventListener('click',getRandomInt);
+handdleGetRandomNumber.addEventListener("click", getRandomInt);
 
 // A Regular Expression is a sequence of characters that forms a search pattern.
 
@@ -556,14 +520,11 @@ handdleGetRandomNumber.addEventListener('click',getRandomInt);
 //     Text replacing
 //     Text validation
 
-
 // w3schools  is a pattern (to be used in a search).
 // i  is a modifier (modifies the search to be case-insensitive).
-let myText = "visit W3schools"
-let n = myText.search(/w3schools/i) // this the  regular expression.
-console.log(n)
-
-
+let myText = "visit W3schools";
+let n = myText.search(/w3schools/i); // this the  regular expression.
+console.log(n);
 
 // Using String Methods
 
@@ -574,17 +535,16 @@ console.log(n)
 // search(regex) 	Returns the index of the first match
 
 //using match
-let m = myText.match(/w3schools/i)
-console.log('match returns an array',m);
+let m = myText.match(/w3schools/i);
+console.log("match returns an array", m);
 
-//using replace 
-let r = myText.replace(/Microsoft/i, "W3Schools")
-console.log('replace returns strings',r);
+//using replace
+let r = myText.replace(/Microsoft/i, "W3Schools");
+console.log("replace returns strings", r);
 
 //using search
 let s = myText.search(/W3Schools/);
-console.log('search returns index of the first match ', s)
-
+console.log("search returns index of the first match ", s);
 
 // RexExp Alternation (OR)
 // In a regular expression an alternation is denoted with a vertical line character |.
@@ -592,7 +552,6 @@ console.log('search returns index of the first match ', s)
 
 let myColors = "Black, white, red, green, blue, yellow.";
 let colorResult = text.match(/red|green|blue/g);
-
 
 // RegExp \d (digits) Metacharacter
 // The \d metacharacter matches digits.
@@ -604,7 +563,7 @@ let texting1 = "Give 100%!";
 const patterning = /\d/g;
 
 let output = texting1.match(patterning);
-console.log('output',output);
+console.log("output", output);
 
 // RegExp \w (word) Metacharacter
 // The \w metacharacter matches word characters.
@@ -618,15 +577,13 @@ let textInput = "Give 100%!";
 const pattern = /\w/g;
 
 let result = textInput.match(pattern);
-console.log('result',result);
-
+console.log("result", result);
 
 //Data Types in JavaScript
 // JavaScript has 7 data types that can be divided into 2 categories:
 // 1. Primitive data types Numeric And Non-Numeric
 // : string, number, boolean, null, undefined, symbol
 // 2. Non-primitive data type: object = arrays, functions, dates, RegExp, set, Map etc.
-
 
 // // Number
 // let length = 16;
@@ -664,81 +621,69 @@ console.log('result',result);
 // // Date Object
 // const date = new Date("2022-03-25");
 
-
-//toString 
+//toString
 
 const fruitsSting = ["Banana", "Orange", "Apple", "Mango"];
 
-let myList = fruitsSting.toString()
-console.log('myList',myList)
+let myList = fruitsSting.toString();
+console.log("myList", myList);
 
 const todayDate = new Date();
 let textDate = todayDate.toString();
-console.log('textDate',textDate)
+console.log("textDate", textDate);
 
 //objext to string
 let person = {
   firstname: "John",
   lastname: "Doe",
-}
-console.log('person',person.toString())
+};
+console.log("person", person.toString());
 
-
-
-//JavaScript Type Conversion 
+//JavaScript Type Conversion
 // Converting Strings to Numbers
 let str = "123";
 let num = Number(str);
-console.log('num',num);
+console.log("num", num);
 
-let routine = 'Learning JavaScript';
+let routine = "Learning JavaScript";
 
-let Myday = routine === 'Learning JavaScript' ? 'Great day!' : 'Keep learning!';
-console.log('Myday',Myday);
-console.log('typeof Myday', typeof Myday); // returns "string"
-
+let Myday = routine === "Learning JavaScript" ? "Great day!" : "Keep learning!";
+console.log("Myday", Myday);
+console.log("typeof Myday", typeof Myday); // returns "string"
 
 //JavaScript Errors
 
-
 try {
-  1 + v
-}catch(err){
-  console.log('Error caught:', err.message);
+  1 + v;
+} catch (err) {
+  console.log("Error caught:", err.message);
 }
-
-
 
 // Reference Errors  A ReferenceError occurs if you use (reference) a variable that does not exist.
 let x = 5;
 
 try {
   x = y + 1;
-} catch(err) {
+} catch (err) {
   let text = err.name;
 }
-
 
 // JavaScript Type Errors
 // A Type Error occurs when a value is of the wrong type or an operation is invalid on that type.
 
- 
 let ttNum = 5;
 // ttNum.toUpperCase(); // This will cause a TypeError because toUpperCase() is not a function for numbers.
 // try {
 //   Anna(5);
 // } catch(err) {
 //   let text = err.name;
-// } 
-
+// }
 
 //JavaScript Syntax Errors
 // JavaScript Syntax Errors
 // A Syntax Error occurs when the code violates JavaScript's grammar rules.
 // // This line cannot be parsed by JavaScript
-// let fName = "John); 
-
-
+// let fName = "John);
 
 //JavaScript Silent Errors
 //JavaScript Silent Errors
@@ -751,8 +696,6 @@ let ttNum = 5;
 //   let result = "Active!";
 // }
 
-
-
 let isActive = false;
 
 if (isActive) {
@@ -762,7 +705,7 @@ if (isActive) {
 }
 
 let myR = isActive ? "Active!" : "Not Active.";
-console.log('myR',myR);
+console.log("myR", myR);
 
 //JavaScript Debugging
 //Debugging means finding and fixing mistakes (bugs) in your code.
@@ -775,45 +718,39 @@ console.log('myR',myR);
 //     Read the error
 //     Reproduce the problem
 //     Reduce to a small example
-//     Then fix it. 
+//     Then fix it.
 
-console.warn("Hello world")
+console.warn("Hello world");
 
 let users = [
-  {name: "John", age: 25},
-  {name: "Anna", age: 30}
+  { name: "John", age: 25 },
+  { name: "Anna", age: 30 },
 ];
-
 
 console.table(users);
 
-
-
 // JavaScript Debugging Breakpoints
 
-function addNum(a,b){
+function addNum(a, b) {
   let result = a + b;
   return result;
 }
 
 document.getElementById("demo").innerHTML = addNum(10, 10);
 
-
 // JavaScript Style Guide
 // Variable Names
 
 // let firstName = "Hannah"
 
-
 // Code Indentation
 // Always use 2 spaces for indentation of code blocks:
 
 function setRoundedNum(num) {
-console.log((5 / 9) *  (num - 32)) 
+  console.log((5 / 9) * (num - 32));
 }
 
 setRoundedNum(50);
-
 
 // Statement Rules
 // General rules for simple statements:
@@ -828,11 +765,9 @@ const cars = ["Volvo", "Saab", "Fiat"];
 //     Put the closing bracket on a new line, without leading spaces.
 //     Do not end a complex statement with a semicolon.
 
-
 for (let i = 0; i < 5; i++) {
   x += i;
-} 
-
+}
 
 // Don't Use new Object()
 //     Use "" instead of new String()
@@ -842,9 +777,6 @@ for (let i = 0; i < 5; i++) {
 //     Use [] instead of new Array()
 //     Use /()/ instead of new RegExp()
 //     Use function (){} instead of new Function()
-
-
-
 
 // Use === Comparison
 
@@ -858,8 +790,7 @@ for (let i = 0; i < 5; i++) {
 
 // 0 === "";       // false
 // 1 === "1";      // false
-// 1 === true;     // false 
-
+// 1 === true;     // false
 
 // End Your Switches with Defaults
 // Always end your switch statements with a default. Even if you think there is no need for it.
@@ -894,25 +825,24 @@ switch (new Date().getDay()) {
 
 // Loops are often used in programming.
 // Each statement in a loop, including the for statement, is executed for each iteration of the loop.
-// Statements or assignments that can be placed outside the loop will make the loop run faster. 
+// Statements or assignments that can be placed outside the loop will make the loop run faster.
 
-let  i = 0;
-do{
-  console.log('do while loop',i)
-  i++
-}while( i < 5 );
+let i = 0;
+do {
+  console.log("do while loop", i);
+  i++;
+} while (i < 5);
 
-let devicePc = ['Mouse', 'Keyboard', 'Laptop'];
+let devicePc = ["Mouse", "Keyboard", "Laptop"];
 
 for (let i = 0; i < devicePc.length; i++) {
   console.log(devicePc[i]);
 }
 
-
-let  myName = () =>  {
- let quantity  = 10
- console.log('Agender', quantity > 5 ? "Adult" : "small")
-}
+let myName = () => {
+  let quantity = 10;
+  console.log("Agender", quantity > 5 ? "Adult" : "small");
+};
 
 myName();
 
@@ -934,7 +864,6 @@ myName();
 // <h1> 	Element Node
 // My Header 	Text Node
 
-
 //Accessing HTML Elements
 // Access a paragraph Element
 const myPara = document.getElementById("Hello");
@@ -942,21 +871,18 @@ const myPara = document.getElementById("Hello");
 // Change the content of the Element
 myPara.innerHTML = "Hello World";
 
-myPara.textContent = "Bye"
+myPara.textContent = "Bye";
 // In the example above, the getElementById method used id="demo" to find the element.
 
 //     id="demo" is an HTML property
 //     getElementById() is a DOM Method
 //     innerHTML is a DOM Property
 
-
 // HTML DOM API
 
-let codinng = "Night"
+let codinng = "Night";
 
-const me = codinng === 'Night' ? "code" : "sleep"
-
-
+const me = codinng === "Night" ? "code" : "sleep";
 
 // JavaScript is the Language
 // The DOM API is a standard for how to get, change, add, or delete HTML DOM elements.
@@ -967,7 +893,7 @@ const me = codinng === 'Night' ? "code" : "sleep"
 // Finding HTML Element by Id
 // document.getElementById('demo')
 
-//by tagname 
+//by tagname
 // document.getElementsByTagName("li")
 
 //by class name
@@ -976,59 +902,69 @@ const me = codinng === 'Night' ? "code" : "sleep"
 // Finding HTML Elements by CSS Selectors
 // const myPara = document.querySelector(".demo");
 
-
 // The querySelectorAll() Method
 // const myItems = document.querySelector(".demo");
 
-
 // Change the content of a <p> element:
-let myContent = document.getElementById('Content');
+let myContent = document.getElementById("Content");
 myContent.innerHTML = "Fa Akomapa Nante";
 
 // Changing an Attribute
 // Changes the value of the src attribute of an <img> element:
 
-let upDateImage =  document.getElementById("im");
+let upDateImage = document.getElementById("im");
 upDateImage.src = "/images/b2.jpg";
 
-
-
-document.write(Date())
-
-
+document.write(Date());
 
 //Changing HTML Style
 
-let helloWorld = document.querySelector(".bb")
-helloWorld.style.color = "red"
+let helloWorld = document.querySelector(".bb");
+helloWorld.style.color = "red";
 
 //Using Events
 const udateHelloWord = () => {
-helloWorld.style.color = "Green"
-}
+  helloWorld.style.color = "Green";
+};
 let nn = document.querySelector(".nn");
 
-nn.addEventListener('click', udateHelloWord);
+nn.addEventListener("click", udateHelloWord);
+
+class Student {
+  name;
+  age;
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+const Kwame = new Student("Kwame", 20);
+console.log(Kwame);
 
 
 //Advanced Functions Study Path
 // Function Declaration
 function myFunction(a, b) {
   return a * b;
-};
+}
 
-// Function Expression
-const myFunction1 = function(a, b) {
+// Function Expression (Anonymous)
+const myFunction1 = function (a, b) {
   return a * b;
 };
 
-
 // Arrow Function
-const addPage = (a,b) =>  a * b;
-
+const addPage = (a, b) => a * b;
 
 // Function Constructor
 const myFunction2 = new Function("x", "y", "return x * y");
 
-// Function Constructor
-const myFunction3 = new Function("x", "y", "return x * y");
+// Function Expression (Anonymous)
+const myFunction3 = function (x, y) {
+  return x * y
+};
+
+
+const z = myFunction3(10, 2);
+console.log(z)
