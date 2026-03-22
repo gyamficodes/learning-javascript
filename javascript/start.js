@@ -968,3 +968,6 @@ const myFunction3 = function (x, y) {
 
 const z = myFunction3(10, 2);
 console.log(z)
+
+
+
