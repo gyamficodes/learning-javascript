@@ -966,8 +966,24 @@ const myFunction3 = function (x, y) {
 };
 
 
-const z = myFunction3(10, 2);
-console.log(z)
+
+// usinhg the this Keyword 
 
 
+let  myPerson =  {
+  name: "John",
+  age: 24,
+  infomation:"Software Developer",
+  fullName: function(){ 
+    return ` Fullname${this.name}   age:${this.age}`
+  }
+};
+
+console.log(myPerson.fullName());
+
+
+//JavaScript Function call()
+// The call() method can be used to call a function with a specific this.
+// The call() method lets an object use a method belonging to another object.
+// In this way, the same method can be used on different objects.
 
