@@ -987,3 +987,20 @@ console.log(myPerson.fullName());
 // The call() method lets an object use a method belonging to another object.
 // In this way, the same method can be used on different objects.
 
+
+const person1 = {
+  fullName: function(){ 
+    return ` Fullname${this.fistName}   ${this.lastName}`
+  }
+}
+
+
+const person2 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+
+console.log(person1.fullName.call(person2));
+
+
