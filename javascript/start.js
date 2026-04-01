@@ -942,7 +942,6 @@ class Student {
 const Kwame = new Student("Kwame", 20);
 console.log(Kwame);
 
-
 //Advanced Functions Study Path
 // Function Declaration
 function myFunction(a, b) {
@@ -962,45 +961,98 @@ const myFunction2 = new Function("x", "y", "return x * y");
 
 // Function Expression (Anonymous)
 const myFunction3 = function (x, y) {
-  return x * y
+  return x * y;
 };
 
+// usinhg the this Keyword
 
-
-// usinhg the this Keyword 
-
-
-let  myPerson =  {
+let myPerson = {
   name: "John",
   age: 24,
-  infomation:"Software Developer",
-  fullName: function(){ 
-    return ` Fullname${this.name}   age:${this.age}`
-  }
+  infomation: "Software Developer",
+  fullName: function () {
+    return ` Fullname${this.name}   age:${this.age}`;
+  },
 };
 
 console.log(myPerson.fullName());
-
 
 //JavaScript Function call()
 // The call() method can be used to call a function with a specific this.
 // The call() method lets an object use a method belonging to another object.
 // In this way, the same method can be used on different objects.
 
-
 const person1 = {
-  fullName: function(){ 
-    return ` Fullname${this.fistName}   ${this.lastName}`
+  fullName: function () {
+    return ` Fullname${this.fistName}   ${this.lastName}`;
+  },
+};
+
+const person2 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+console.log(person1.fullName.call(person2));
+
+let myPersonInfo = {
+  fullName: function (city, country) {
+    return (
+      this.firstName +
+      ", " +
+      this.firstName +
+      ", " +
+      this.lastName +
+      "," +
+      city +
+      "," +
+      country
+    );
+  },
+};
+
+console.log(myPersonInfo.fullName.call(person2, " Sunyani", "Ghana"));
+
+
+//JavaScript Function apply()
+// The Difference Between call() and apply()
+// The only difference between apply() and call() is how arguments are passed.
+// The call() method takes arguments separately.
+// The apply() method takes arguments as an array.
+const App = {
+  fullName: function(age) {
+    return  age 
   }
 }
 
 
-const person2 = {
-  firstName:"John",
-  lastName: "Doe"
+let app1 = {
+  firstName: "Jonny",
 }
 
 
-console.log(person1.fullName.call(person2));
 
 
+console.log(App.fullName.apply(app1, [30]));
+
+
+//bind 
+// Create person Object
+const perons = {
+  firstNames:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+// Create member Object
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+// Bind the fullName method to the member Object   
+let fullName = perons.fullName.bind(member);
+
+// Later call fullname()
+fullname()
