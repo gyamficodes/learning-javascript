@@ -1012,47 +1012,83 @@ let myPersonInfo = {
 
 console.log(myPersonInfo.fullName.call(person2, " Sunyani", "Ghana"));
 
-
 //JavaScript Function apply()
 // The Difference Between call() and apply()
 // The only difference between apply() and call() is how arguments are passed.
 // The call() method takes arguments separately.
 // The apply() method takes arguments as an array.
 const App = {
-  fullName: function(age) {
-    return  age 
-  }
-}
-
+  fullName: function (age) {
+    return age;
+  },
+};
 
 let app1 = {
   firstName: "Jonny",
-}
-
-
-
+};
 
 console.log(App.fullName.apply(app1, [30]));
 
-
-//bind 
+//bind
 // Create person Object
 const perons = {
-  firstNames:"John",
+  firstNames: "John",
   lastName: "Doe",
   fullName: function () {
     return this.firstName + " " + this.lastName;
-  }
-}
+  },
+};
 
 // Create member Object
 const member = {
-  firstName:"Hege",
+  firstName: "Hege",
   lastName: "Nilsen",
-}
+};
 
-// Bind the fullName method to the member Object   
+// Bind the fullName method to the member Object
 let fullName = perons.fullName.bind(member);
 
 // Later call fullname()
-fullname()
+fullName();
+
+// another example of bind
+
+const Phones = {
+  name: "iPhone",
+  year: "2026",
+
+  getInfo: function () {
+    return this.name + " was released in " + this.year;
+  },
+};
+
+
+const getPhoneInfo = Phones.getInfo.bind(Phones);
+console.log(getPhoneInfo());
+
+//Self-Invoking Functions
+(function () {
+ let message = "Hello, World!";
+  console.log(message);
+})();
+
+
+(() => {
+  let message = "Hello, World!";
+  console.log(message);
+})();
+
+// JavaScript Objects - Advanced
+const person11 = {
+  firstName : "John",
+  lastName : "Doe",
+  age : 50,
+  eyeColor : "blue"
+};
+
+let text1 = Object.entries(person11);
+console.log("text1", text1);
+
+for(let [key, value] of Object.entries(person11)){
+  console.log(`${key}: ${value}`);
+}
