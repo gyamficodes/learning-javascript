@@ -1092,3 +1092,5 @@ console.log("text1", text1);
 for(let [key, value] of Object.entries(person11)){
   console.log(`${key}: ${value}`);
 }
+
+
