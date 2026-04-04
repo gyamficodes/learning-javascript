@@ -1093,4 +1093,19 @@ for(let [key, value] of Object.entries(person11)){
   console.log(`${key}: ${value}`);
 }
 
+// JavaScript Object Accessors
+// JavaScript Getters and Setters
+// Getters and setters allow you to define Object Accessors (Computed Properties).
 
+const devices = {
+  name: "Lenovo",
+  Info: "Gen11, Battry 100",
+  Year: "2025",
+
+  get deviceYear() {
+   return  this.Year;
+  }
+}
+
+console.log(devices.deviceYear.toUpperCase())
+localStorage.setItem("device",devices.name)
