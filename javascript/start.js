@@ -1108,4 +1108,25 @@ const devices = {
 }
 
 console.log(devices.deviceYear.toUpperCase())
-localStorage.setItem("device",devices.name)
+
+
+//JavaScript Object Management
+
+Object.defineProperties(devices, { "color": { value: "Black" } });
+console.log("devices", devices.color);
+
+//JavaScript getOwnPropertyNames()
+console.log(Object.getOwnPropertyNames(devices))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+//JavaScript Object.keys()
+// The Object.keys() method can:
+//     List enumerable object properties
+console.log(Object.keys(devices));
+
+
+
+
+
+
+
+
