@@ -1124,9 +1124,39 @@ console.log(Object.getOwnPropertyNames(devices))
 console.log(Object.keys(devices));
 
 
+// Prototype Inheritance
+function Books(title, author, year){
+  this.title = title;
+  this.author = author;
+  this.year = year;
+}
+const MathBook = new Books("Mathematics", "John Doe", 2020);
+Books.prototype.info = "This is a book about mathematics.";
+
+console.log(MathBook);
+
+
+
+// JavaScript Classes  
+class Animals {
+ 
+  constructor(name, kind,food, year ){
+    this.name = name ;
+    this.king = kind;
+    this.food = food;
+    this.year = year;
+  }
+
+ getAnimalAge(){
+   const d  = new Date();
+   return   d.getFullYear() - this.year;
+ }
+}
+
+const animal1 = new Animals("cat", "pet", "canivious", 2021);
+console.log(animal1, animal1.getAnimalAge());
 
 
 
 
-
-
+ 
