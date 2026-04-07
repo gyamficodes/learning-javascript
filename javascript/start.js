@@ -1158,5 +1158,68 @@ console.log(animal1, animal1.getAnimalAge());
 
 
 
+class Shirt {
+  constructor(title, price , year ) {
+    this.title = title;
+    this.price = price;
+    this.year = year;
+  }
 
+  age(x) {
+    return x - this.year;
+  }
+}
  
+const shirt1 =  new Shirt("Polo", 50, 2018);
+ const ddd = new Date();
+ let year = ddd.getFullYear()
+
+console.log(shirt1.age(year));
+
+// JavaScript Classes  inheritance 
+// Class Inheritance
+// To create a class inheritance, use the extends keyword.
+// A class created with a class inheritance inherits all the methods from another class
+
+class Laptop {
+  constructor(brand, price){
+    this.brand = brand;
+    this.price = price;
+  }
+}
+
+class Model extends Laptop {
+  constructor(brand, price) {
+     super(brand,price);
+ 
+  }
+}
+
+
+let Model1 = new Model("HP", 100);
+console.log(Model);
+
+
+
+// JavaScript Static Methods
+// Static class methods are defined on the class itself.
+// You cannot call a static method on an object, only on an object class.
+
+class greeting {
+  constructor(name){
+    this.name = name;
+  }
+
+  static sayHello() {
+    return "Hello!";
+  }
+
+  static sayGoodbye(x) {
+    return `Goodbye, ${x}!`;
+  }
+}
+
+
+let greet = new greeting("John");
+console.log(greet);
+console.log(greeting.sayHello(), greeting.sayGoodbye("John"));
