@@ -1223,3 +1223,10 @@ class greeting {
 let greet = new greeting("John");
 console.log(greet);
 console.log(greeting.sayHello(), greeting.sayGoodbye("John"));
+
+
+// Asynchronous JavaScript
+
+
+
+
