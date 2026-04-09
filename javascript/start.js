@@ -1226,7 +1226,9 @@ console.log(greeting.sayHello(), greeting.sayGoodbye("John"));
 
 
 // Asynchronous JavaScript
-
+// Asynchronous Code
+// Async code allows a program to start a long-running task (like fetching data from a file). and continue with other tasks before the first one finishes.
+// Async code prevents the application from freezing, which is critical for user experience.
 
 
 
