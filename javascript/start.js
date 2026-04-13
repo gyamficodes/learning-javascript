@@ -1231,6 +1231,14 @@ console.log(greeting.sayHello(), greeting.sayGoodbye("John"));
 // Async code prevents the application from freezing, which is critical for user experience.
 
 
+//JavaScript Timeouts
+
+setTimeout(() => {
+  console.log("Hello, World!");
+}, 5000);
 
 
+setTimeout(console.log("Hello, World!"), 700);
 
+
+// JavaScript Callbacks
