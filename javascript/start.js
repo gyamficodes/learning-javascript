@@ -1242,3 +1242,21 @@ setTimeout(console.log("Hello, World!"), 700);
 
 
 // JavaScript Callbacks
+// A callback is a function that runs later.
+// A callback is a function passed as an argument to another function.
+// This technique allows a function to call another function.
+
+
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = "Data fetched!";
+    callback(data);
+  }, 2000);
+
+fetchData((result) => {
+  console.log(result);
+});
+
+
+// JavaScript Promises
+// A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
