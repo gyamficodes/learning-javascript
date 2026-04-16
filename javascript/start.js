@@ -1258,5 +1258,6 @@ fetchData((result) => {
 });
 
 
+
 // JavaScript Promises
 // A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
