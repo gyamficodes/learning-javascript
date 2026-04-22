@@ -1247,17 +1247,35 @@ setTimeout(console.log("Hello, World!"), 700);
 // This technique allows a function to call another function.
 
 
-function fetchData(callback) {
-  setTimeout(() => {
-    const data = "Data fetched!";
-    callback(data);
-  }, 2000);
+// function fetchData(callback) {
+//   setTimeout(() => {
+//     const data = "Data fetched!";
+//     callback(data);
+//   }, 2000);
 
-fetchData((result) => {
-  console.log(result);
-});
+// fetchData((result) => {
+//   console.log(result);
+// });
 
 
 
 // JavaScript Promises
 // A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+// Creating a Promise
+
+let myPromise = new Promise((resolve, reject) =>  {
+   ok = true;
+
+   if(ok){
+      resolve("Promise resolved successfully!");
+   } else {
+      reject("Promise rejected.");
+   }
+});
+
+
+myPromise.then((message) => {
+  console.log(message);
+}).catch((error) => {
+  console.error(error);
+});
