@@ -1279,3 +1279,27 @@ myPromise.then((message) => {
 }).catch((error) => {
   console.error(error);
 });
+
+
+
+let myHanddleInvoice = new Promise((resolve, reject) => {
+  
+  let isLogin  = true;
+
+  if(isLogin){
+    console.log("Login is succuessfull")
+  }else{
+    console.log("Please try to login")
+  }
+
+})
+
+
+myHanddleInvoice
+.then((message) => {
+  console.log(message)
+}).catch((error) => {
+  console.log(error)
+})
+
+
