@@ -1062,16 +1062,14 @@ const Phones = {
   },
 };
 
-
 const getPhoneInfo = Phones.getInfo.bind(Phones);
 console.log(getPhoneInfo());
 
 //Self-Invoking Functions
 (function () {
- let message = "Hello, World!";
+  let message = "Hello, World!";
   console.log(message);
 })();
-
 
 (() => {
   let message = "Hello, World!";
@@ -1080,16 +1078,16 @@ console.log(getPhoneInfo());
 
 // JavaScript Objects - Advanced
 const person11 = {
-  firstName : "John",
-  lastName : "Doe",
-  age : 50,
-  eyeColor : "blue"
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
 };
 
 let text1 = Object.entries(person11);
 console.log("text1", text1);
 
-for(let [key, value] of Object.entries(person11)){
+for (let [key, value] of Object.entries(person11)) {
   console.log(`${key}: ${value}`);
 }
 
@@ -1103,29 +1101,27 @@ const devices = {
   Year: "2025",
 
   get deviceYear() {
-   return  this.Year;
-  }
-}
+    return this.Year;
+  },
+};
 
-console.log(devices.deviceYear.toUpperCase())
-
+console.log(devices.deviceYear.toUpperCase());
 
 //JavaScript Object Management
 
-Object.defineProperties(devices, { "color": { value: "Black" } });
+Object.defineProperties(devices, { color: { value: "Black" } });
 console.log("devices", devices.color);
 
 //JavaScript getOwnPropertyNames()
-console.log(Object.getOwnPropertyNames(devices))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+console.log(Object.getOwnPropertyNames(devices));
 
 //JavaScript Object.keys()
 // The Object.keys() method can:
 //     List enumerable object properties
 console.log(Object.keys(devices));
 
-
 // Prototype Inheritance
-function Books(title, author, year){
+function Books(title, author, year) {
   this.title = title;
   this.author = author;
   this.year = year;
@@ -1135,31 +1131,26 @@ Books.prototype.info = "This is a book about mathematics.";
 
 console.log(MathBook);
 
-
-
-// JavaScript Classes  
+// JavaScript Classes
 class Animals {
- 
-  constructor(name, kind,food, year ){
-    this.name = name ;
+  constructor(name, kind, food, year) {
+    this.name = name;
     this.king = kind;
     this.food = food;
     this.year = year;
   }
 
- getAnimalAge(){
-   const d  = new Date();
-   return   d.getFullYear() - this.year;
- }
+  getAnimalAge() {
+    const d = new Date();
+    return d.getFullYear() - this.year;
+  }
 }
 
 const animal1 = new Animals("cat", "pet", "canivious", 2021);
 console.log(animal1, animal1.getAnimalAge());
 
-
-
 class Shirt {
-  constructor(title, price , year ) {
+  constructor(title, price, year) {
     this.title = title;
     this.price = price;
     this.year = year;
@@ -1169,20 +1160,20 @@ class Shirt {
     return x - this.year;
   }
 }
- 
-const shirt1 =  new Shirt("Polo", 50, 2018);
- const ddd = new Date();
- let year = ddd.getFullYear()
+
+const shirt1 = new Shirt("Polo", 50, 2018);
+const ddd = new Date();
+let year = ddd.getFullYear();
 
 console.log(shirt1.age(year));
 
-// JavaScript Classes  inheritance 
+// JavaScript Classes  inheritance
 // Class Inheritance
 // To create a class inheritance, use the extends keyword.
 // A class created with a class inheritance inherits all the methods from another class
 
 class Laptop {
-  constructor(brand, price){
+  constructor(brand, price) {
     this.brand = brand;
     this.price = price;
   }
@@ -1190,23 +1181,19 @@ class Laptop {
 
 class Model extends Laptop {
   constructor(brand, price) {
-     super(brand,price);
- 
+    super(brand, price);
   }
 }
 
-
 let Model1 = new Model("HP", 100);
 console.log(Model);
-
-
 
 // JavaScript Static Methods
 // Static class methods are defined on the class itself.
 // You cannot call a static method on an object, only on an object class.
 
 class greeting {
-  constructor(name){
+  constructor(name) {
     this.name = name;
   }
 
@@ -1219,17 +1206,14 @@ class greeting {
   }
 }
 
-
 let greet = new greeting("John");
 console.log(greet);
 console.log(greeting.sayHello(), greeting.sayGoodbye("John"));
-
 
 // Asynchronous JavaScript
 // Asynchronous Code
 // Async code allows a program to start a long-running task (like fetching data from a file). and continue with other tasks before the first one finishes.
 // Async code prevents the application from freezing, which is critical for user experience.
-
 
 //JavaScript Timeouts
 
@@ -1237,15 +1221,12 @@ setTimeout(() => {
   console.log("Hello, World!");
 }, 5000);
 
-
 setTimeout(console.log("Hello, World!"), 700);
-
 
 // JavaScript Callbacks
 // A callback is a function that runs later.
 // A callback is a function passed as an argument to another function.
 // This technique allows a function to call another function.
-
 
 // function fetchData(callback) {
 //   setTimeout(() => {
@@ -1257,53 +1238,63 @@ setTimeout(console.log("Hello, World!"), 700);
 //   console.log(result);
 // });
 
-
-
 // JavaScript Promises
 // A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 // Creating a Promise
 
-let myPromise = new Promise((resolve, reject) =>  {
-   ok = true;
+let myPromise = new Promise((resolve, reject) => {
+  ok = true;
 
-   if(ok){
-      resolve("Promise resolved successfully!");
-   } else {
-      reject("Promise rejected.");
-   }
+  if (ok) {
+    resolve("Promise resolved successfully!");
+  } else {
+    reject("Promise rejected.");
+  }
 });
 
-
-myPromise.then((message) => {
-  console.log(message);
-}).catch((error) => {
-  console.error(error);
-});
-
-
+myPromise
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 let myHanddleInvoice = new Promise((resolve, reject) => {
-  
-  let isLogin  = true;
+  let isLogin = true;
 
-  if(isLogin){
-    console.log("Login is succuessfull")
-  }else{
-    console.log("Please try to login")
+  if (isLogin) {
+    console.log("Login is succuessfull");
+  } else {
+    console.log("Please try to login");
   }
-
-})
-
+});
 
 myHanddleInvoice
-.then((message) => {
-  console.log(message)
-}).catch((error) => {
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+const myFoodPromise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if (success) {
+    resolve("The food is prepared");
+  }
+  if (!success) {
+    reject("The food is not  prepared");
+  }
+});
+
+myFoodPromise
+.then(function(result) {
+  conslose.log(result);
+} )
+.catch(function(error) {
   console.log(error)
 })
-
-
-
-
 
 
