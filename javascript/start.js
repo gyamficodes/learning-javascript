@@ -1291,10 +1291,41 @@ const myFoodPromise = new Promise((resolve, reject) => {
 
 myFoodPromise
 .then(function(result) {
-  conslose.log(result);
+  console.log(result);
 } )
 .catch(function(error) {
   console.log(error)
 })
 
 
+const apiKey = "606b6c417293fdd930fb719770ec7cbe";
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&units=metric`)
+  .then(res => res.json())
+  .then(data => {
+    console.log("City:", data.name);
+    console.log("Temperature:", data.main.temp);
+    console.log("Weather:", data.weather[0].description);
+  })
+  .catch(err => console.log(err));
+
+
+//   // JavaScript async and await
+// async and await make promises easier
+// You still use promises, but you write the code like normal step by step code.
+// async makes a function return a Promise
+// await makes a function wait for a Promise
+
+function myDisplayer(sms){
+  console.log(sms);
+}
+
+async function myNames() {
+  return "Hello bro";
+}
+
+myNames().then(function(value) {
+  myDisplayer(value);
+}).catch(function(error) {
+  console.log(error);
+});
