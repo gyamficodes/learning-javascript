@@ -1290,25 +1290,25 @@ const myFoodPromise = new Promise((resolve, reject) => {
 });
 
 myFoodPromise
-.then(function(result) {
-  console.log(result);
-} )
-.catch(function(error) {
-  console.log(error)
-})
-
+  .then(function (result) {
+    console.log(result);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
 const apiKey = "606b6c417293fdd930fb719770ec7cbe";
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&units=metric`)
-  .then(res => res.json())
-  .then(data => {
+fetch(
+  `https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&units=metric`,
+)
+  .then((res) => res.json())
+  .then((data) => {
     console.log("City:", data.name);
     console.log("Temperature:", data.main.temp);
     console.log("Weather:", data.weather[0].description);
   })
-  .catch(err => console.log(err));
-
+  .catch((err) => console.log(err));
 
 //   // JavaScript async and await
 // async and await make promises easier
@@ -1316,7 +1316,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&u
 // async makes a function return a Promise
 // await makes a function wait for a Promise
 
-function myDisplayer(sms){
+function myDisplayer(sms) {
   console.log(sms);
 }
 
@@ -1324,12 +1324,13 @@ async function myNames() {
   return "Hello bro";
 }
 
-myNames().then(function(value) {
-  myDisplayer(value);
-}).catch(function(error) {
-  console.log(error);
-});
-
+myNames()
+  .then(function (value) {
+    myDisplayer(value);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
 // Handling Errors with try...catch
 // Promises use catch() for errors.
@@ -1337,8 +1338,8 @@ myNames().then(function(value) {
 
 async function run() {
   try {
-     let values = await fail()
-     console.log(values)
+    let values = await fail();
+    console.log(values);
   } catch (error) {
     console.log(error);
   }
@@ -1356,17 +1357,14 @@ async function run() {
   console.log(values);
 }
 
-
 // Real Example with fetch
 // fetch() returns a promise.
 // This makes it a perfect example for async and await.
 
-async function loadData(){
-    try {
-      let response = await fetch("data.json");
-      let data = await response.json();
-      console.log(data);
-    } catch (error) {
-      
-    }
+async function loadData() {
+  try {
+    let response = await fetch("data.json");
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {}
 }
