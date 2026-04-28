@@ -1329,3 +1329,44 @@ myNames().then(function(value) {
 }).catch(function(error) {
   console.log(error);
 });
+
+
+// Handling Errors with try...catch
+// Promises use catch() for errors.
+// async and await use try...catch.
+
+async function run() {
+  try {
+     let values = await fail()
+     console.log(values)
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// run();
+
+// If tasks do not depend on each other, you can run them in parallel.
+// Use Promise.all() to wait for both.
+
+async function run() {
+  let p1 = step1();
+  let p2 = step2();
+  let values = await Promise.all([p1, p2]);
+  console.log(values);
+}
+
+
+// Real Example with fetch
+// fetch() returns a promise.
+// This makes it a perfect example for async and await.
+
+async function loadData(){
+    try {
+      let response = await fetch("data.json");
+      let data = await response.json();
+      console.log(data);
+    } catch (error) {
+      
+    }
+}
