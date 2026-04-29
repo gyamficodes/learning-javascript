@@ -1368,3 +1368,21 @@ async function loadData() {
     console.log(data);
   } catch (error) {}
 }
+
+// JavaScript fetch API
+// fetch() is the modern way to request data from a server
+// fetch() is asynchronous and returns a promise
+// Modern apps use async code to get data
+// fetch() is the most common example
+
+// Important: HTTP Errors
+async function fectDta() {
+  let res = await fetch("data.jsong");
+
+  if (!res.ok) {
+    console.log("HTTP Error", res.status);
+  }
+
+  let data = res.json();
+  console.log(data);
+}
