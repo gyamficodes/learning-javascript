@@ -1390,21 +1390,24 @@ async function fectDta() {
 // Debugging Tip
 // Debugging Async JavaScript
 
+// Rule 1: Always Handle Errors
+// Rule 2: Check response.ok
 async function loadAgeData() {
+  let apiKey = "606b6c417293fdd930fb719770ec7cbe";
   try{
-    let response = await fetch("ageData.json");
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Accra&appid=${apiKey}&units=metric`);
     if(!response.ok){
       throw new Error(`HTTP error! status: ${response.status}`);
+      console.log(response.headers.get("content-type"));
     }
+
+    let data = await response.json();
+    console.log("Age Data:", data);
   }catch(error){
     console.error("Error fetching age data:", error);
   }
 }
-
-
-
-
-
+loadAgeData();
 
 
 
