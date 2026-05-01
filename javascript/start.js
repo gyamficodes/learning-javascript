@@ -1386,3 +1386,28 @@ async function fectDta() {
   let data = res.json();
   console.log(data);
 }
+
+// Debugging Tip
+// Debugging Async JavaScript
+
+async function loadAgeData() {
+  try{
+    let response = await fetch("ageData.json");
+    if(!response.ok){
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+  }catch(error){
+    console.error("Error fetching age data:", error);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
