@@ -15,4 +15,8 @@ export default message;
  
 
 // JavaScript Modules Export
+const data = "This is some data to export.";
+const num = 30;
+const page  = "Home";
+export { data, num, page };
 
