@@ -1,3 +1,5 @@
+
+
 // Varaibles and Data types
 
 const name = "John";
@@ -1408,7 +1410,6 @@ async function loadAgeData() {
   }
 }
 loadAgeData();
-
 
 
 
