@@ -40,7 +40,29 @@ let product = all.multiply(5, 10);
 console.log(`PI: ${PI}, Sum: ${sum}, Product: ${product}`);
 
 
+// How Dynamic Import Works
+async function runAddData() {
+   const module = await import("./dynamic.js");
+   let result = module.addData(50, 10);
+   console.log(result);
+}
 
+runAddData();
 
+// temperatures.js
 
+async function  tempDataC(x) {
+    const celcuis = await import("./dynamic.js");
+    let result = celcuis.convertCelcius(x)
+    console.log('Celcuis', result);
+}
 
+tempDataC(50);
+
+async function  tempDataF(x) {
+    const celcuis = await import("./dynamic.js");
+    let result = celcuis.toFahrenheit(x)
+    console.log('Fahrenheit', result);
+}
+
+tempDataF(50);
