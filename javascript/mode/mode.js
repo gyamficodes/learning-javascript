@@ -66,3 +66,42 @@ async function  tempDataF(x) {
 }
 
 tempDataF(50);
+
+
+
+// Metaprogramming
+// Metaprogramming refers to a number of ways a program can manipulate itself:
+// The Easy Explanation
+// Normally, code handles data.
+// With metaprogramming, code handles code.
+
+const obj = {
+  name: "Alice",
+}
+
+let mrArr = Object.keys(obj);
+console.log(mrArr); // Output: ["name"]
+
+
+// The Reflect Object
+// Reflect is a object with methods for low-level operations on JavaScript objects.
+// With the Reflect object you can get, set, delete, and check object properties in a consistent way.
+// Reflect was added to JavaScript in ES6 (2015).
+
+// Reflect.has()
+// The Reflect.has() method checks if an object has a specific property.
+const myPerson = {
+  name: "Baeb",
+  age: 30
+}
+
+const anwer = Reflect.has(myPerson, "name");
+console.log(anwer); // Output: true
+
+// to deleete property 
+const deleteResult = Reflect.deleteProperty(myPerson, "age");
+console.log(deleteResult); // Output: true
+
+// to get property value
+const nameValue = Reflect.get(myPerson, "name");
+console.log(nameValue); // Output: "Baeb"
