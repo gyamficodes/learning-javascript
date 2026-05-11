@@ -127,7 +127,27 @@ const parent = document.getElementById("div1");
 const child = document.getElementById("p1");
 parent.removeChild(child);
  
+//JavaScript HTML DOM Collections
+// The getElementsByTagName() method returns an HTMLCollection object.
+// An HTMLCollection object is an array-like list (collection) of HTML elements.
+// The following codeselects all <p> elements in a document:
+
+const myCollection = document.getElementsByTagName("p");
+console.log(myCollection); // Output: HTMLCollection(3) [p#p1, p#p2, p#p3]
+
+for(let i = 0; i < myCollection.length; i++) {
+  console.log(myCollection[i].textContent);
+  myCollection[i].style.color = "blue";
+}
 
 
+// JavaScript HTML DOM Node Lists
+// The querySelectorAll() method returns a NodeList object.
 
+const myNodeList = document.querySelectorAll("p");
+console.log(myNodeList); // Output: NodeList(3) [p#p1, p#p2, p#p3]
 
+myNodeList.forEach(node => {
+  console.log(node.textContent);
+  node.style.color = "red";
+});

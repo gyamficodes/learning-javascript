@@ -1412,6 +1412,17 @@ async function loadAgeData() {
 loadAgeData();
 
 
+// // JavaScript Window - The Browser Object Model
+// let myName1 = window.prompt("Please enter your name:");
+// alert("Hello " + myName1 + "! How are you today?");
 
 
+// JavaScript Window Screen
 
+function displayScreenInfo(){
+  if(window.screen.height >  50){
+    console.log("Screen height is greater than 800");
+  }
+}
+
+displayScreenInfo();
