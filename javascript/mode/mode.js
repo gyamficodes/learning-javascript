@@ -122,6 +122,10 @@ console.log(myBuf); // Output: ArrayBuffer { byteLength: 16 }
 let myTitle = document.getElementById("dd").firstChild.nodeValue;
 console.log(myTitle);
 
+// Removing a Child Node
+const parent = document.getElementById("div1");
+const child = document.getElementById("p1");
+parent.removeChild(child);
  
 
 
