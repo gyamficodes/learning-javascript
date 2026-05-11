@@ -105,3 +105,25 @@ console.log(deleteResult); // Output: true
 // to get property value
 const nameValue = Reflect.get(myPerson, "name");
 console.log(nameValue); // Output: "Baeb"
+
+
+// JavaScript Typed Arrays
+// JavaScript Typed Arrays are a set of array-like objects that provide a mechanism for reading and writing raw binary data in memory buffers. They were introduced in ECMAScript 2015 (ES6) to allow developers to work with binary data more efficiently, especially when dealing with large datasets or performing operations that require high performance, such as graphics processing or audio manipulation.
+// Typed arrays was designed for handling Binary Data.
+
+const myArrs =  new Uint8Array(8);
+console.log(myArrs); // Output: Uint8Array(4) [0, 0, 0, 0]
+
+const myBuf = new ArrayBuffer(16);
+console.log(myBuf); // Output: ArrayBuffer { byteLength: 16 }
+
+
+// JavaScript HTML DOM Navigation
+let myTitle = document.getElementById("dd").firstChild.nodeValue;
+console.log(myTitle);
+
+ 
+
+
+
+
