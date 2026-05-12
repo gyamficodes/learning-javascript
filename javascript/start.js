@@ -1417,8 +1417,7 @@ loadAgeData();
 // alert("Hello " + myName1 + "! How are you today?");
 
 
-// JavaScript Window Screen
-
+// JavaScript Window Screen 
 function displayScreenInfo(){
   if(window.screen.height >  50){
     console.log("Screen height is greater than 800");
@@ -1426,3 +1425,23 @@ function displayScreenInfo(){
 }
 
 displayScreenInfo();
+
+
+
+
+// JavaScript Window Location
+// The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+
+
+// JavaScript Timing Events
+const myTime =  () => {
+  let myrr = ["Hello", "World", "Welcome", "To", "JavaScript"]
+   let eachData = myrr.forEach((e) =>  (console.log("myTime", e)))
+};
+setTimeout(myTime, 5000)
+
+
+
+
+
+
