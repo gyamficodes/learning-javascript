@@ -1439,7 +1439,8 @@ const myTime =  () => {
 setTimeout(myTime, 5000)
 
 
+// JavaScript Fetch API
 
 
-
+// AJAX Introduction
 
